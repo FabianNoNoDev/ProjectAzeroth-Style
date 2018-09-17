@@ -1,0 +1,524 @@
+/* Common */
+.icon_flat
+{
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.icon_auth
+{
+    display: block;
+    background: url('../img/icon/google_auth.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Authenticator_main.html */
+.block_authenticator
+{
+    height: 240px;
+    width: 1200px;
+    margin: auto;
+}
+
+.block_authenticator .block_infos,
+.block_authenticator .block_activation
+{
+    height: 100%;
+    width: calc(50% - 0.5px);
+    background-color: rgba(0,0,0,0.2);
+    float: left;
+}
+
+.block_authenticator .block_infos
+{
+    margin-left: 1px;
+}
+
+.block_authenticator .frame_shield
+{
+    display: block;
+    width: 300px;
+    height: 240px;
+    background: url('../img/account/bg_services.png') 0 0 no-repeat;
+    float: left;
+}
+
+.block_authenticator .shield_texts
+{
+    width: calc(100% - 300px);
+    height: 100%;
+    float: left;
+}
+
+.block_authenticator .shield_title,
+.block_authenticator .infos_title
+{
+    font-size: 21px;
+    font-family: 'UbuntuLight';
+    font-weight: bold;
+    margin-top: 55px;
+}
+
+.block_authenticator .shield_texts .btn,
+.block_infos .btn
+{
+    font-family: 'UbuntuLight';
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+
+.block_infos .btn
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.block_authenticator .infos_title
+{
+    padding: 0 25px;
+    text-decoration: underline;
+}
+
+.block_authenticator .infos_text
+{
+    display: block;
+    font-family: 'UbuntuLight';
+    padding: 0 25px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+#authenticator_code {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.block_stores
+{
+    width: 1261px;
+    margin-top: 40px;
+    border-top: 1px solid #404F5B;
+}
+
+.block_stores .icon_flat
+{
+    float: right;
+    height: 75px;
+    width: 75px;
+}
+
+.block_stores .icon_auth
+{
+    background-size: 64px 64px;
+    top: 5px;
+    left: 5px;
+}
+
+.block_stores .block_google_auth,
+.block_stores .block_stores_unit
+{
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.block_stores .block_stores_unit
+{
+    margin-top: 60px;
+}
+
+.block_stores .content_icon
+{
+    width: 150px;
+    height: 128px;
+    float: left;
+}
+
+.block_stores .google_auth_text
+{
+    display: block;
+    float: left;
+    width: calc(100% - 150px);
+    font-size: 22px;
+    color: #869EAE;
+    padding-left: 20px;
+    margin-top: 65px;
+}
+
+.block_stores .icon_android,
+.block_stores .icon_appstore,
+.block_stores .icon_windows,
+.block_stores .icon_blackberry
+{
+    width: 120px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-left: 30px;
+}
+
+.block_stores [class^="icon_"] img
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .block_authenticator
+    {
+        height: 480px;
+        width: auto;
+    }
+    .block_authenticator .block_infos,
+    .block_authenticator .block_activation
+    {
+        height: 240px;
+        width: calc(100% - 80px);
+        margin-left: 40px;
+    }
+    .block_authenticator .block_infos
+    {
+        margin-top: 1px;
+    }
+    .block_stores
+    {
+        min-height: 235px;
+    }
+    .block_stores .icon_flat
+    {
+        border-radius: 25px;
+    }
+    .block_stores .block_google_auth,
+    .block_stores .block_stores_unit
+    {
+        width: 100%;
+    }
+    .block_stores .block_google_auth
+    {
+        padding-left: 140px;
+    }
+    .block_stores .block_stores_unit
+    {
+        margin-top: 0px;
+    }
+    .block_stores .icon_android,
+    .block_stores .icon_appstore,
+    .block_stores .icon_windows,
+    .block_stores .icon_blackberry
+    {
+        width: 170px;
+        height: 50px;
+        margin-left: 50px;
+    }
+    .block_authenticator .shield_texts .btn
+    {
+        margin-top: 55px;
+        width: 50%;
+        margin-left: 120px;
+    }
+    .block_stores
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .block_authenticator .shield_texts .btn
+    {
+        margin-top: 35px;
+        margin-left: 0px;
+        width: 90%;
+    }
+    .block_stores .block_google_auth
+    {
+        padding-left: 0px;
+    }
+    .block_stores .content_icon
+    {
+        width: 125px;
+    }
+    .block_stores .icon_android,
+    .block_stores .icon_appstore,
+    .block_stores .icon_windows,
+    .block_stores .icon_blackberry
+    {
+        width: 132px;
+        height: 45px;
+        margin-left: 20px;
+    }
+}
+
+/* Authenticator_activate.html */
+.block_activate_authenticator
+{
+    height: 240px;
+    width: 1200px;
+    margin: auto;
+}
+
+.block_activate_authenticator > p
+{
+    display: block;
+    width: 100%;
+    font-family: 'UbuntuLight';
+    font-size: 16px;
+    clear: both;
+}
+
+.block_activate_authenticator .content
+{
+    width: 100%;
+    padding-left: 80px;
+    margin-top: 70px;
+}
+
+.block_activate_authenticator .content .header
+{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.block_activate_authenticator .header .step_icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #3266CC;
+    font-family: 'ElanITCStdBold';
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    display: block;
+    float: left;
+    margin-top: 3px;
+}
+
+.block_activate_authenticator .header .title
+{
+    display: block;
+    float: right;
+    width: calc(100% - 40px);
+    font-size: 20px;
+    font-family: 'UbuntuLight';
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.block_activate_authenticator .header .title.align_title
+{
+    margin-top: 10px;
+}
+
+.block_activate_authenticator .demi_block
+{
+    width: 50%;
+    float: left;
+}
+
+.block_activate_authenticator .icon_flat
+{
+    margin-left: 50px;
+}
+
+.block_activate_authenticator .icon_flat
+{
+    height: 128px;
+    width: 128px;
+}
+
+.block_activate_authenticator .icon_auth
+{
+    background-size: 128px 128px;
+}
+
+.block_activate_authenticator .icon_android,
+.block_activate_authenticator .icon_appstore,
+.block_activate_authenticator .icon_windows,
+.block_activate_authenticator .icon_blackberry
+{
+    width: 110px;
+    height: 35px;
+    display: block;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.block_activate_authenticator .icon_android
+{
+    margin-top: 25px;
+}
+
+.block_activate_authenticator [class^="icon_"] img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.block_activate_authenticator .block
+{
+    width: 100%;
+}
+
+.block_activate_authenticator .qrcode
+{
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#authenticator_sentance_key {
+    text-align: center;
+    margin-top: 20px;
+}
+#authenticator_key {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3266CC;
+    border-radius: 13px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: -5px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block_activate_authenticator .align_input > input
+{
+    height: 40px;
+}
+
+.block_activate_authenticator .align_input+button
+{
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family: 'UbuntuLight';
+    height: 40px;
+}
+
+.block_activate_authenticator .first_step,
+.block_activate_authenticator .second_step,
+.block_activate_authenticator .third_step
+{
+    width: 33%;
+    margin: auto;
+    float: left;
+    padding-bottom: 25px;
+}
+
+.block_activate_authenticator .second_step .header
+{
+    padding-left: 40px;
+}
+@media screen and (max-width: 960px) {
+    .block_activate_authenticator
+    {
+        display: inline;
+        min-height: 700px;
+    }
+    .block_activate_authenticator > p
+    {
+        padding-left: 45px;
+        padding-top: 25px;
+    }
+    .block_activate_authenticator .content
+    {
+        min-height: 700px;
+        margin-top: 25px;
+    }
+    .block_activate_authenticator .first_step,
+    .block_activate_authenticator .second_step
+    {
+        width: 50%;
+        margin: auto;
+        float: left;
+    }
+    .block_activate_authenticator .third_step
+    {
+        clear: both;
+        width: 70%;
+        float: left;
+        margin-left: 200px;
+        margin-top: 80px;
+        margin-bottom: 25px;
+    }
+    .block_activate_authenticator .third_step .title
+    {
+        margin-top: 10px;
+    }
+    .block_activate_authenticator .third_step input
+    {
+        margin-left: 65px;
+        width: 50%;
+    }
+    .block_activate_authenticator .third_step .btn
+    {
+        margin-left: 140px;
+    }
+    .block_activate_authenticator .second_step .header
+    {
+        padding-left: 40px;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    .block_activate_authenticator
+    {
+        display: inline;
+        min-height: 700px;
+    }
+    .block_activate_authenticator .content
+    {
+        min-height: 700px;
+        margin-top: 25px;
+    }
+    .block_activate_authenticator .first_step,
+    .block_activate_authenticator .second_step,
+    .block_activate_authenticator .third_step
+    {
+        width: 100%;
+        margin: auto;
+        float: left;
+    }
+    .block_activate_authenticator .content
+    {
+        min-height: 800px;
+    }
+    .block_activate_authenticator .second_step .header
+    {
+        padding-left: 0px;
+    }
+    .block_activate_authenticator .qrcode
+    {
+        margin-left: 170px;
+    }
+    .block_activate_authenticator .icon_flat
+    {
+        margin-left: 100px;
+    }
+    .block_activate_authenticator .icon_android,
+    .block_activate_authenticator .icon_appstore,
+    .block_activate_authenticator .icon_windows,
+    .block_activate_authenticator .icon_blackberry
+    {
+        margin-left: 0px;
+    }
+    .block_activate_authenticator .first_step .title
+    {
+        margin-top: 10px;
+    }
+}

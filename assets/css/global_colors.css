@@ -1,0 +1,32 @@
+header nav {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(62, 27, 5, 1) 0%, rgba(62, 27, 5, 1) 0%, rgba(62, 27, 5, 1) 0%) repeat scroll 0 0;
+    box-shadow: 0 2px 5px #52260e;
+}
+
+.marketing {
+    background-color: rgba(42, 22, 15, 1);
+}
+
+.transparend_bg {
+    background-color: rgba(42, 22, 15, 0.8);
+}
+
+footer {
+    background-color: #1a0f09;
+}
+
+header nav ul .nav_button a {
+    color: #ffa400;
+}
+
+header nav ul .dropdown_navigation a {
+    color: #ffa400;
+}
+
+header nav .reduced_menu .btn_nav_menu {
+    color: #ffa400;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: transparent;
+}

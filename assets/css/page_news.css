@@ -1,0 +1,790 @@
+.block_news {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+.block_news .news {
+    width: 1280px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: white;
+}
+.block_news a:not(:last-child) .news {
+    border-bottom: 1px solid rgb(56, 70, 80);
+}
+.block_news a:first-child .news {
+    border-radius: 3px 3px 0 0;
+}
+.block_news a:last-child .news {
+    border-radius: 0 0 3px 3px;
+}
+.block_news .news:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.block_news .news:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.block_news .news img {
+    width: 260px;
+    height: 132px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 14px 20px 0 0;
+    float: left;
+}
+.block_news .news .news_expansion {
+    font-family: 'UbuntuLight';
+    color: #95aee1;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.block_news .news .news_title {
+    font-family: 'UbuntuLight';
+    font-size: 25px;
+    margin-top: 10px;
+}
+.block_news .news .news_description {
+    font-family: 'UbuntuLight';
+    width: 800px;
+    overflow: hidden;
+    height: 70px;
+}
+.block_news .news .news_date {
+    font-family: 'UbuntuLight';
+    color: white;
+    font-size: 13px;
+    float: right;
+    margin-top: -154px;
+}
+.block_news .news .news_comment {
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.block_news .block_news_detail {
+    width: 960px;
+    float: left;
+    border-radius: 3px;
+}
+.block_news .block_news_detail .news_more {
+    width: 940px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.block_news .block_news_detail .news_more .news_title {
+    font-family: 'UbuntuLight';
+    font-size: 35px;
+    margin-top: 20px;
+}
+.block_news .block_news_detail .news_more .news_expansion {
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    color: #95AEE1;
+    display: inline-block;
+}
+.block_news .block_news_detail .news_more .news_date {
+    font-family: 'UbuntuLight';
+    color: white;
+    float: right;
+    display: inline-block;
+}
+.block_news .block_news_detail .news_more .news_comment {
+    float: right;
+    font-size: 30px;
+    font-family: 'UbuntuBold';
+    margin-top: -50px;
+}
+.block_news .block_news_detail .news_more .news_comment a {
+    color: white;
+}
+.block_news .block_news_detail .news_more .news_comment a:hover {
+    opacity: 0.8;
+}
+.block_news .block_news_detail .news_more .news_comment a:active {
+    opacity: 0.6;
+}
+.block_news .block_news_detail .news_more .news_image {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    max-width: 100%;
+}
+.block_news .block_news_detail .news_more .news_image img {
+    max-width: 100%;
+}
+.block_news .block_news_detail .news_more .news_content {
+    font-family: 'UbuntuLight';
+    word-wrap: break-word;
+    text-align: justify;
+}
+.block_news .block_news_detail .news_more .news_content p {
+    margin: 20px 0 20px 0;
+}
+.block_news .block_news_detail .news_more .news_content img {
+    max-width: 100%;
+    height: auto !important;
+}
+.block_news .block_news_detail .news_more .news_social {
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+.block_news .block_news_detail .news_more .news_social .btn_fb_like,
+.block_news .block_news_detail .news_more .news_social .btn_fb_share,
+.block_news .block_news_detail .news_more .news_social .btn_twitter {
+    display: inline-block;
+    height: 20px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.block_news .block_news_detail .comment_section {
+    width: 940px;
+    margin-top: 50px;
+}
+.block_news .block_news_detail .comment_section .leave_comment .title {
+    font-family: 'UbuntuBold';
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+.block_news .block_news_detail .comment_section .leave_comment #comment {
+    max-width: 940px;
+    min-width: 940px;
+    width: 940px;
+    height: 90px;
+    min-height: 90px;
+    color: black;
+    font-family: 'UbuntuLight';
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    resize: none;
+}
+.block_news .block_news_detail .comment_section .leave_comment .btn_comment {
+    width: 220px;
+    height: 50px;
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    float: right;
+    margin-top: 8px;
+}
+.block_news .block_news_detail .comment_section .comment_list {
+    margin-top: 90px;
+}
+.block_news .block_news_detail .comment_section .comment_list .nb_comment {
+    font-family: 'UbuntuLight';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment {
+    margin-bottom: 20px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top {
+    width: 940px;
+    height: 60px;
+    background-color: rgb(34, 42, 48);
+    border-radius: 3px 3px 0 0;
+    padding: 10px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top .icon {
+    float: left;
+    margin-right: 10px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top .icon img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top .info_joueur .nom_joueur {
+    float: left;
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    margin-right: 10px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top .info_joueur .nom_guilde {
+    font-family: 'UbuntuLight';
+    font-size: 13px;
+    margin-top: 9px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top .info_joueur.alliance .nom_guilde {
+    color: #6699cc;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_top .info_joueur.horde .nom_guilde {
+    color: #dd6160;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_content {
+    width: 940px;
+    background-color: rgb(56, 70, 80);
+    border-radius: 0 0 3px 3px;
+    padding: 20px;
+}
+.block_news .comment_content
+{
+    word-wrap: break-word;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_content .comment_date {
+    font-family: 'UbuntuBold';
+    color: #CC9933;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.block_news .block_news_detail .comment_section .comment_list .comment .comment_content p {
+    font-family: 'UbuntuLight';
+}
+.block_news .block_news_hot_topics {
+    float: right;
+    width: 300px;
+}
+.block_news .block_news_hot_topics .hot_topic_top {
+    width: 300px;
+    height: 60px;
+    border-radius: 3px 3px 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.block_news .block_news_hot_topics .hot_topic_top .hot_topic_icon {
+    font-size: 18px;
+    color: #FFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 125px;
+    padding: 10px;
+    float: left;
+    margin: 9px 11px 0px 10px;
+}
+.block_news .block_news_hot_topics .hot_topic_top .hot_topic_top_title {
+    text-transform: uppercase;
+    font-family: "UbuntuLight";
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 19px;
+}
+.block_news .block_news_hot_topics a:last-child .hot_topic {
+    border-radius: 0 0 3px 3px;
+}
+.block_news .block_news_hot_topics .hot_topic {
+    width: 300px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-bottom: -5px;
+    border-top: 1px solid #384650;
+}
+.block_news .block_news_hot_topics .hot_topic:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.block_news .block_news_hot_topics .hot_topic:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.block_news .block_news_hot_topics .hot_topic img {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    width: 90px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+}
+.block_news .block_news_hot_topics .hot_topic .hot_topic_info {
+    width: 150px;
+    float: left;
+}
+.block_news .block_news_hot_topics .hot_topic .hot_topic_info .hot_topic_expansion {
+    font-family: 'UbuntuLight';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #95AEE1;
+    margin-bottom: 5px;
+}
+.block_news .block_news_hot_topics .hot_topic .hot_topic_info .hot_topic_title {
+    font-family: 'UbuntuLight';
+    color: white;
+    font-size: 16px;
+}
+.block_news .block_news_hot_topics .hot_topic .hot_topic_info .hot_topic_date {
+    font-family: 'UbuntuLight';
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.block_load_news,
+.block_load_comments {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 50px 0;
+    display: inline-block;
+}
+.block_load_news .btn_load_news,
+.block_load_comments .btn_load_comments {
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    width: 220px;
+    height: 50px;
+}
+.news_dev {
+    width: 1281px;
+    padding-bottom: 50px;
+}
+.news_dev .news_dev_list {
+    width: 379px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 3px 0 0 3px;
+    vertical-align: top;
+    margin-right: -4px;
+}
+.news_dev .news_dev_list .dev_choice_extension {
+    width: 100%;
+    height: 51px;
+    border-bottom: 1px solid #1E2228;
+}
+.news_dev .news_dev_list .dev_choice_extension .btn-group {
+    width: 380px;
+    height: 40px;
+    background: none;
+}
+.news_dev .news_dev_list .dev_choice_extension .btn {
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+}
+.news_dev .news_dev_list .dev_choice_extension .btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .picto_Down {
+    display: inline-block;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .picto_Up {
+    display: none;
+}
+.news_dev .news_dev_list .bootstrap-select > .dropdown-toggle {
+    padding-right: 35px;
+}
+.news_dev .news_dev_list .dev_choice_extension .open > .dropdown-toggle.btn-default {
+    background-color: rgb(51, 102, 204);
+    box-shadow: none;
+    color: white;
+    border-radius: 0;
+}
+.news_dev .news_dev_list .dev_choice_extension .open .dropdown-toggle .picto_Down {
+    display: none;
+}
+.news_dev .news_dev_list .dev_choice_extension .open .dropdown-toggle .picto_Up {
+    display: inline-block;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0px;
+    box-shadow: none;
+    margin-top: 2px;
+    margin-bottom: -2px;
+    overflow: hidden;
+}
+.news_dev .news_dev_list .dev_choice_extension .filtre_ordre .dropdown-menu {
+    width: 380px;
+}
+.news_dev .news_dev_list .dev_choice_extension .filtre_nb_pages .dropdown-menu {
+    width: 70px;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu li {
+    width: 380px;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu li a {
+    background-color: rgb(0, 0, 0);
+    color: #71818c;
+    font-family: 'UbuntuLight';
+    height: 40px;
+    display: block;
+    padding: 10px 0 0 12px;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu .selected {
+    display: none;
+}
+.news_dev .news_dev_list .list_content .list_item {
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.news_dev .news_dev_list .list_content a:last-child .list_item {
+    border-radius: 0 0 0 3px;
+}
+.news_dev .news_dev_list .list_content .list_item.active,
+.news_dev .news_dev_list .list_content .list_item.active:hover {
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(51,102,204,0.6) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(51,102,204,0.6)));
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(51,102,204,0.6) 100%);
+    background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(51,102,204,0.6) 100%);
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(51,102,204,0.6) 100%);
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(51,102,204,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#993366cc',GradientType=1 );
+    border-right: 1px solid #3366CB;
+}
+.news_dev .news_dev_list .list_content .list_item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.news_dev .news_dev_list .list_content .list_item img {
+    border: 1px solid #171F26;
+    float: left;
+    margin-right: 20px;
+    width: 93px;
+    height: 63px;
+}
+.news_dev .news_dev_list .list_content .list_item .list_item_expansion {
+    font-family: 'UbuntuLight';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #95aee1;
+}
+.news_dev .news_dev_list .list_content .list_item .list_item_title {
+    font-family: 'UbuntuLight';
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+}
+.news_dev .news_dev_list .list_content .list_item .list_item_date {
+    font-family: 'UbuntuLight';
+    color: #435a6a;
+    margin-top: 5px;
+}
+.news_dev .news_dev_list .list_content .list_item.active .list_item_date {
+    color: white;
+}
+.news_dev .news_dev_list .block_load_more {
+    width: 100%;
+    height: 75px;
+    border-top: 1px solid #1E2228;
+    text-align: center;
+    padding-top: 12px;
+}
+.news_dev .news_dev_list .block_load_more .btn_load {
+    font-family: "UbuntuLight";
+    text-transform: uppercase;
+    height: 50px;
+}
+.news_dev .news_dev_content {
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border-radius: 0 3px 3px;
+    padding: 20px;
+    vertical-align: top;
+}
+.news_dev .news_dev_content .expansion_info {
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    color: #95aee1;
+    display: inline-block;
+}
+.news_dev .news_dev_content .date {
+    font-family: 'UbuntuLight';
+    color: white;
+    float: right;
+    display: inline-block;
+}
+.news_dev .news_dev_content .dev_title {
+    font-family: 'UbuntuLight';
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+}
+.news_dev .news_dev_content .content {
+    min-height: 600px;
+}
+.news_dev .news_dev_content .content img {
+    max-width: 100%;
+    height: auto !important;
+}
+.news_dev .news_dev_content .content li {
+    list-style-type: disc;
+}
+.news_dev .news_dev_content .buttons_update {
+    display: none;
+}
+.news_dev .news_dev_social {
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.news_dev .news_dev_social .btn_fb_like,
+.news_dev .news_dev_social .btn_fb_share,
+.news_dev .news_dev_social .btn_twitter {
+    display: inline-block;
+    height: 20px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+@media screen and (max-width:1280px) {
+    .block_news .news {
+        width: 960px;
+    }
+    .block_news .news .news_description {
+        width: 500px;
+    }
+    .block_news .block_news_detail {
+        width: 640px;
+    }
+    .block_news .block_news_detail .news_more {
+        width: 620px;
+    }
+    .block_news .block_news_detail .news_more .news_title {
+        font-size: 40px;
+    }
+    .block_news .block_news_detail .news_more .news_date {
+        font-size: 16px;
+    }
+    .block_news .block_news_detail .news_more .news_comment {
+        font-size: 25px;
+    }
+    .block_news .block_news_detail .news_more .news_image img {
+        max-width: 100%
+    }
+    .block_news .block_news_detail .comment_section {
+        width: 620px;
+    }
+    .block_news .block_news_detail .comment_section .leave_comment #comment {
+        max-width: 620px;
+        min-width: 620px;
+        width: 620px;
+    }
+    .block_news .block_news_detail .comment_section .comment_list .comment .comment_top {
+        width: 620px;
+    }
+    .block_news .block_news_detail .comment_section .comment_list .comment .comment_content {
+        width: 620px;
+    }
+    .news_dev {
+        width: 960px;
+    }
+    .news_dev .news_dev_list {
+        width: 300px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .btn-group {
+        width: 300px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .filtre_ordre .dropdown-menu {
+        width: 300px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu li {
+        width: 300px;
+    }
+    .news_dev .news_dev_content {
+        width: 660px;
+    }
+}
+@media screen and (max-width:960px) {
+    .block_news .news {
+        width: 640px;
+        height: 250px;
+    }
+    .block_news .news img {
+        margin: 25px 20px 0 0;
+    }
+    .block_news .news .news_description {
+        width: 320px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
+    .block_news .news .news_date {
+        margin-top: -189px;
+    }
+    .block_news .news .news_comment {
+        float: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 0 20px 0 280px;
+    }
+    .block_news .block_news_detail {
+        width: 640px;
+    }
+    .block_news .block_news_detail .news_more {
+        width: 640px;
+        margin: 0;
+    }
+    .block_news .block_news_detail .news_more .news_title {
+        font-size: 40px;
+    }
+    .block_news .block_news_detail .news_more .news_date {
+        font-size: 16px;
+        margin-top: -206px;
+    }
+    .block_news .block_news_detail .comment_section {
+        width: 640px;
+    }
+    .block_news .block_news_detail .comment_section .leave_comment #comment {
+        max-width: 640px;
+        min-width: 640px;
+        width: 640px;
+    }
+    .block_news .block_news_detail .comment_section .comment_list .comment .comment_top {
+        width: 640px;
+    }
+    .block_news .block_news_detail .comment_section .comment_list .comment .comment_content {
+        width: 640px;
+    }
+    .block_news .block_news_hot_topics {
+        display: none;
+    }
+    .news_dev {
+        width: 640px;
+    }
+    .news_dev .news_dev_list {
+        width: 200px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .btn-group {
+        width: 200px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .filtre_ordre .dropdown-menu {
+        width: 200px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu li {
+        width: 200px;
+    }
+    .news_dev .news_dev_list .block_load_more .btn_load {
+        width: 170px;
+    }
+    .news_dev .news_dev_list .list_content .list_item img {
+        display: none;
+    }
+    .news_dev .news_dev_content {
+        width: 440px;
+    }
+    .news_dev .news_dev_social {
+        height: 100px;
+    }
+    .news_dev .news_dev_social .btn_fb_like,
+    .news_dev .news_dev_social .btn_fb_share,
+    .news_dev .news_dev_social .btn_twitter {
+        display: block;
+        height: 20px;
+        margin: 0 0 10px 0;
+    }
+}
+@media screen and (max-width:640px) {
+    .block_news hr {
+        display: none;
+    }
+    .block_news .news {
+        width: 320px;
+        height: 450px;
+        margin: 20px 0 20px 0;
+        border-radius: 3px;
+    }
+    .block_news .news img {
+        float: none;
+        margin: 0 0 20px 10px;
+    }
+    .block_news .news .news_title {
+        font-size: 20px;
+    }
+    .block_news .news .news_description {
+        width: 300px;
+        height: 170px;
+        padding-right: 20px;
+    }
+    .block_news .news .news_comment {
+        margin: 0 20px 0 0;
+        font-size: 20px;
+        margin-top: 4px;
+    }
+    .block_news .news .news_comment .news_comment_text {
+        display: none;
+    }
+    .block_news .news .news_date {
+        margin-top: 10px;
+    }
+    .block_news .block_news_detail {
+        width: 320px;
+    }
+    .block_news .block_news_detail .news_more {
+        width: 320px;
+    }
+    .block_news .block_news_detail .news_more .news_title {
+        font-size: 25px;
+    }
+    .block_news .block_news_detail .news_more .news_date {
+        font-size: 14px;
+    }
+    .block_news .block_news_detail .news_more .news_comment {
+        font-size: 20px;
+    }
+    .block_news .block_news_detail .news_more .news_image img {
+        max-width: 100%;
+    }
+    .block_news .block_news_detail .comment_section {
+        width: 320px;
+    }
+    .block_news .block_news_detail .news_more .news_social {
+        height: 80px;
+    }
+    .block_news .block_news_detail .news_more .news_social .btn_fb_like,
+    .block_news .block_news_detail .news_more .news_social .btn_fb_share,
+    .block_news .block_news_detail .news_more .news_social .btn_twitter {
+        display: block;
+        height: 20px;
+        margin: 0 0 10px 0;
+    }
+    .block_news .block_news_detail .comment_section .leave_comment #comment {
+        max-width: 320px;
+        min-width: 320px;
+        width: 320px;
+    }
+    .block_news .block_news_detail .comment_section .comment_list .comment .comment_top {
+        width: 320px;
+    }
+    .block_news .block_news_detail .comment_section .comment_list .comment .comment_content {
+        width: 320px;
+    }
+    .news_dev {
+        width: 320px;
+    }
+    .news_dev .news_dev_list {
+        width: 320px;
+        border-radius: 3px 3px 0 0;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .btn-group {
+        width: 320px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .filtre_ordre .dropdown-menu {
+        width: 320px;
+    }
+    .news_dev .news_dev_list .dev_choice_extension .bootstrap-select .dropdown-menu li {
+        width: 320px;
+    }
+    .news_dev .news_dev_list .list_content {
+        display: none;
+    }
+    .news_dev .news_dev_list .block_load_more {
+        display: none;
+    }
+    .news_dev .news_dev_content {
+        width: 320px;
+        border-radius: 0 0 3px 3px;
+    }
+    .news_dev .news_dev_content .dev_title {
+        font-size: 25px;
+    }
+    .news_dev .news_dev_content .buttons_update {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .news_dev .news_dev_content .buttons_update .btn {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+    }
+    .news_dev .news_dev_content .buttons_update .btn.button_next {
+        float: right;
+    }
+    .news_dev .news_dev_content .content {
+        min-height: 0px;
+    }
+}

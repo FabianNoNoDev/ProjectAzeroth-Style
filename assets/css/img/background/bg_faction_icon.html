@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Firestorm </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1"/>
+        <meta name="description" content="World of Warcraft" />
+        <meta property="og:description" content="World of Warcraft">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-114x114">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://firestorm-servers.com/assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://firestorm-servers.com/assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://firestorm-servers.com/assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://firestorm-servers.com/assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://firestorm-servers.com/assets/img/favicon/favicon-16x16.png">
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-68269099-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <script type="text/javascript" src="//static.wowhead.com/widgets/power.js"></script>
+        <script>
+            var wowhead_tooltips =
+            {
+                "iconizelinks": true,
+                "renamelinks": true
+            };
+
+            var openwowTooltips =
+            {
+                rename: true,
+                icons: true,
+                iconsize: 15,
+                qualitycolor: true
+            };
+        </script>
+
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/bootstrap.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/bootstrap-select.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/jquery.mCustomScrollbar.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/bootstrap-override.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/global.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/generic_elements/dropdown_choice.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/generic_elements/generic_elements.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/pictos.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/font-awesome.min.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/page_footer.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/page_home.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/page_general.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/page_news.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/tooltipster.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/page_header.css?v=3.01" />
+        
+            <link rel="stylesheet" type="text/css" media="screen" href="https://firestorm-servers.com/assets/css/page_authenticator.css?v=3.01" />
+        
+
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/jquery-1.11.3.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/config.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/jquery.tooltipster.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/default.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/firestorm-utils.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/apng-canvas.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/manajax-callbacks-site.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/manajax-check-site.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/manajax-success.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/manajax-check.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/manajax-settings.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/manajax.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/jquery.dataTables.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/jquery.bpopup.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/page_home.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/page_header.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/bootstrap.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/jquery.mCustomScrollbar.concat.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/bootstrap-select.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/submit.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/linkify.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/linkify-jquery.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/jquery.countdown.min.js?v=3.01"></script>
+        
+            <script type="text/javascript" src="https://firestorm-servers.com/assets/javascript/submit.js?v=3.01"></script>
+        
+
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <div id="slider_img_slider">
+
+        </div>
+        <div id="wrapper">
+            <!-- START OF NAVIGATION -->
+                <header>
+    <div id="lang_bar" scrolled="0">
+        <div class="grid">
+            <ul class="menu_lang">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <span style="display:block;">
+                            US
+                            <span class="picto_Down" aria-hidden="true"></span>
+                            <span class="picto_Up" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        
+                            <li>
+                                <a href="https://firestorm-servers.com/fr">
+                                    FR
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://firestorm-servers.com/es">
+                                    ES
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://firestorm-servers.com/ru">
+                                    RU
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://firestorm-servers.com/it">
+                                    IT
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav scrolled="0">
+        <div class="grid">
+            <ul class="left">
+                <li class="block_play">
+                    <div class="play_button">
+                        <a href="" ajax="play" ajax-controller="welcome" ajax-success="replace"> play </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav_button">
+                        <a href="" ajax="index" ajax-controller="shop" ajax-success="replace"> Shop </a>
+                    </div>
+                </li>
+                <li class="dropdown dropdown_navigation">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    community
+                    <span class="picto_Down" aria-hidden="true"></span>
+                    <span class="picto_Up" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="http://us.forum.firestorm-servers.com/" target="_blank">
+                                forum
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" ajax="raids" ajax-controller="community" ajax-success="replace">
+                                Ranking PvE
+                            </a>
+                        </li>
+                        <!-- Wait for it.
+                        <li>
+                            <a href="#">
+                                bugtracker
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ranking
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Stream
+                            </a>
+                        </li>
+                        -->
+                        <li>
+                            <a href="" ajax="index" ajax-controller="news" ajax-success="replace">
+                                news
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" ajax="dev" ajax-controller="news" ajax-success="replace">
+                                changelog
+                            </a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="#">
+                                armory
+                            </a>
+                        </li>
+                        -->
+                    </ul>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <div class="nav_button">
+                        <a href="" ajax="index" ajax-controller="vote" ajax-success="replace"> vote </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav_button">
+                        <a href=""> help </a>
+                    </div>
+                </li>
+                <li class="dropdown dropdown_connection">
+                    <a href="" id="dropdown_connection" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <div class="connection_button">
+                            <span class="picto_connection picto_Compte-Personnage" aria-hidden="true"></span>
+                            <span class="text">
+                            log in
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <form id="formlogin" class="form container-fluid">
+                            <div class="block_login">
+                                <div class="title">
+                                    my account
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="picto_Mail"></span></div>
+                                    <input type="email" name="email" class="form-control" placeholder="email" ajax-value>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="picto_Motdepasse"></span></div>
+                                    <input type="password" name="password" class="form-control" placeholder="password" ajax-value>
+                                </div>
+                                <div class="connection_link">
+                                    <a href="" ajax="password_forgotten" ajax-controller="welcome" ajax-success="replace">
+                                    password forgotten ?  <span class="picto_Next" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <div class="connection_link">
+                                    <a href="" ajax="index" ajax-controller="merge" ajax-success="replace">
+                                    I already have an ashran account <span class="picto_Next" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <button class="btn btn_connection" ajax="login" ajax-controller="welcome" ajax-check="loading" ajax-form="formlogin">
+                                    <span class="picto_connection picto_Compte-Personnage" aria-hidden="true"></span>
+                                    <span class="text"> log in </span>
+                                </button>
+                            </div>
+                            <div class="register">
+                                <div class="text">
+                                    I don't have any Ashran account
+                                </div>
+                                <button class="btn btn-primary btn_register" ajax="register" ajax-controller="welcome" ajax-success="replace">
+                                    register
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <div class="reduced_menu left">
+                <button type="button" class="btn_nav_menu" data-toggle="offcanvas_menu">
+                <span class="picto_menu picto_OffCanvasmenu" aria-hidden="true"></span>
+                <span class="picto_menu picto_Close" aria-hidden="true"></span>
+                <span class="text"> menu </span>
+                </button>
+            </div>
+            <div class="reduced_menu right">
+                <button type="button" class="btn_nav_connection" data-toggle="offcanvas_connection">
+                <span class="picto_connection picto_Compte-Personnage" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="https://firestorm-servers.com/"></a>
+            </a>
+        </div>
+    </nav>
+</header>
+<div class="row row-offcanvas row-offcanvas-menu row-offcanvas-left">
+    <div class="offcanvas_content">
+        <ul class="offcanvas_navigation">
+            <li class="play">
+                <a href="" ajax="play" ajax-controller="welcome" ajax-success="replace"> play </a>
+            </li>
+            <li>
+                <a href="" ajax="index" ajax-controller="shop" ajax-success="replace"> Shop </a>
+            </li>
+            <li>
+                <a href="" ajax="index" ajax-controller="news" ajax-success="replace"> news </a>
+            </li>
+            <li>
+                <a href="" ajax="dev" ajax-controller="news" ajax-success="replace"> changelog </a>
+            </li>
+            <li>
+                <a href="" ajax="index" ajax-controller="vote" ajax-success="replace"> vote </a>
+            </li>
+            <!--
+            <li>
+                <a href=""> help </a>
+            </li>
+            -->
+        </ul>
+        <div class="offcanvas_footer">
+            <div class="grid">
+                <div class="footer_logo">
+                    <div class="picto_Firestorm" aria-hidden="true"></div>
+                    <div class="text_logo"> irestrom </div>
+                </div>
+                <div class="links">
+                    <div class="left_links">
+                        <a class="picto_Twitter footer_twitter" href="https://twitter.com/FirestormInter"></a>
+                        <a class="picto_Facebook footer_facebook" href="https://facebook.com/firestorm.international?ref=bookmarks"></a>
+                        <a class="picto_Youtube footer_youtube" href="https://www.youtube.com/c/Firestorm-servers"></a>
+                    </div>
+                    <div class="right_links">
+                        <a href="" ajax="index" ajax-controller="vote" ajax-success="replace"> vote for us </a>
+                        <a href="http://us.forum.firestorm-servers.com/" target="_blank"> forum </a>
+                        <!-- <a href=""> site map </a> -->
+                        <!-- <a href=""> Legal </a> -->
+                        <a href="" ajax="index" ajax-controller="vote" ajax-success="replace"> vote </a>
+                        <!-- <a href=""> FAQ</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row row-offcanvas row-offcanvas-connection row-offcanvas-right">
+    <div class="offcanvas_content">
+        <form id="formloginreduce">
+            <div class="title">
+                my account
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon"><span class="picto_Mail"></span></div>
+                <input type="email" name="email" class="form-control" placeholder="email" ajax-value>
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon"><span class="picto_Motdepasse"></span></div>
+                <input type="password" name="password" class="form-control" placeholder="password" ajax-value>
+            </div>
+            <div class="connection_link">
+                <a href="" ajax="password_forgotten" ajax-controller="welcome" ajax-success="replace">
+                password forgotten ?  <span class="picto_Next" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="connection_link">
+                <a href="" ajax="index" ajax-controller="merge" ajax-success="replace">
+                I already have an ashran account <span class="picto_Next" aria-hidden="true"></span>
+                </a>
+            </div>
+            <button class="btn btn_connection" ajax="login" ajax-controller="welcome" ajax-check="loading" ajax-form="formloginreduce">
+                <span class="picto_connection picto_Compte-Personnage" aria-hidden="true"></span>
+                <span class="text"> log in </span>
+            </button>
+        </form>
+        <div class="register">
+            <div class="grid">
+                <div class="text">
+                    I don't have any Ashran account
+                </div>
+                <button class="btn btn-primary btn_register" ajax="register" ajax-controller="welcome" ajax-success="replace">
+                    register
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- END OF NAVIGATION -->
+
+            <div id="content">
+                <div class="bg_general">
+    <div id="module_breadcrumb">
+    <div class="grid">
+        <ul>
+            <li>
+                <a href="https://firestorm-servers.com/">
+                <div class="breadcrumb_middle">
+                    <span class="picto_Firestorm" aria-hidden="true"></span>
+                </div> <div class="breadcrumb_front"></div> </a>
+            </li>
+            <!-- Main loop for ariane -->
+                            <!-- If the current item is dropdown (with other links) -->
+                                        <li title="error">
+                            <a href="" ajax="index" ajax-controller="welcome" ajax-success="replace" ajax-check="ariane" ajax-data="">
+                                <div class="breadcrumb_back"></div>
+                                <div class="breadcrumb_middle">
+                                    error                                </div>
+                                <div class="breadcrumb_front"></div>
+                            </a>
+                        </li>
+                                    </ul>
+    </div>
+</div>
+    <div class="grid">
+        <div class="block_title">
+            <span class="icon_title picto_Firestorm" aria-hidden="true"></span>
+            <h1>error 404</h1>
+            <h2>This page doesn't exist</h2>
+        </div>
+        <div class="block_error_404">
+            <div class="error_404">
+                <div class="block_content">
+                    <div class="error_text">
+                        <b>Oops !</b> It seems that a goblin has destroyed the page.
+                    </div>
+                    <a href="" ajax="index" ajax-controller="welcome" ajax-success="replace">
+                        <button class="btn btn-primary btn_back_firestorm">
+                            Return to Firestorm
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <footer>
+                <div class="footer_logo">
+                    <div class="picto_Firestorm" aria-hidden="true"></div>
+                    <div class="text_logo"> irestorm </div>
+                </div>
+                <div class="links">
+                    <div class="left_links">
+                        <a class="picto_Twitter footer_twitter" href="https://twitter.com/FirestormInter"></a>
+                        <a class="picto_Facebook footer_facebook" href="https://facebook.com/firestorm.international?ref=bookmarks"></a>
+                        <a class="picto_Youtube footer_youtube" href="https://www.youtube.com/c/Firestorm-servers"></a>
+                    </div>
+                    <div class="right_links">
+                        <a href="" ajax="index" ajax-controller="vote" ajax-success="replace">vote for us</a>
+                        <a href="http://us.forum.firestorm-servers.com/">forum</a>
+                        <!-- @TODO <a href="#">sitemap</a>
+                        <a href="#">Legal</a>
+                        <a href="#">become VIP</a>
+                        <a href="#">FAQ</a> -->
+                    </div>
+                </div>
+            </footer>
+            <!-- MODAL THING -->
+            <div id="modal_fs" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h4 id="modal_title" class="modal-title alert-error"> </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal_content">
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF MODAL -->
+            <div class="screen_load" id="loading-ajax-screen">
+               <img src="https://firestorm-servers.com/assets/img/logo/logo_load.png" class="apng-image" />
+            </div>
+        </div>
+        
+        
+        
+        <div id="authenticator-popup" style="display:none;">
+    <form id="form-buy-vote">
+        <input type="hidden" name="currency" value="vote" ajax-value />
+        <input type="hidden" name="item_id" value="{ID}" ajax-value />
+    </form>
+    <form id="form-buy-achat">
+        <input type="hidden" name="currency" value="achat" ajax-value />
+        <input type="hidden" name="item_id" value="{ID}" ajax-value />
+    </form>
+    <div id="close_authenticator">
+        x
+    </div>
+    <div class="title_popup">
+        security key Authenticator
+    </div>
+    <div class="text_popup">
+        enter the numeric code generated
+    </div>
+    <div class="input-group has-feedback" id="block_input">
+        <div class="input-group-addon"><span class="fa fa-key"></span></div>
+        <form id="form_authenticator">
+            <input class="form-control input_new_name" id="input_authenticator_popup" name="authenticator_code" placeholder="Code authenticator" required="" type="text" ajax-value>
+        </form>
+    </div>
+    <a href="" id="submit_authenticator_code" ajax="process" ajax-controller="authenticator" ajax-form="form_authenticator" ajax-success="replace" >
+        <button class="btn btn-primary">
+            OK
+        </button>
+    </a>
+</div>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                MANAJAX_SUCCESS.AddCallbacks(manajax_callbacks_site);
+                MANAJAX_CHECK.AddPreCalls(manajax_check_site);
+            });
+        </script>
+    </body>
+</html>

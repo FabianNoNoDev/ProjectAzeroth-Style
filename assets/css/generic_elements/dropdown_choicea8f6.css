@@ -1,0 +1,194 @@
+.block_title .prev_choice {
+    float: right;
+    margin-right: 12px;
+    width: 300px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    border-radius: 3px;
+}
+.boutique_choix a
+{
+    display: block;
+}
+.block_title .prev_choice:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.block_title .prev_choice .dropdown-toggle {
+    display: block;
+    height: 80px;
+    width: 300px;
+    padding: 9px 0 0 10px;
+    color: white;
+}
+.block_title .prev_choice .dropdown-toggle .icon, .block_title .prev_choice .dropdown-menu a .icon {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.block_title .prev_choice .dropdown-toggle .icon img, .block_title .prev_choice .dropdown-menu a .icon img {
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/background/bg_faction_icon.html');
+}
+.block_title .prev_choice .alliance .icon img,
+.block_title .prev_choice .alliance a .icon img {
+    background-color: #054661;
+    background-color: -moz-linear-gradient(top,  #054661 0%, #366a80 100%);
+    background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#054661), color-stop(100%,#366a80));
+    background-color: -webkit-linear-gradient(top,  #054661 0%,#366a80 100%);
+    background-color: -o-linear-gradient(top,  #054661 0%,#366a80 100%);
+    background-color: -ms-linear-gradient(top,  #054661 0%,#366a80 100%);
+    background-color: linear-gradient(to bottom,  #054661 0%,#366a80 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#054661', endColorstr='#366a80',GradientType=0 );
+    background-position: 0 0;
+}
+.block_title .prev_choice .horde .icon img,
+.block_title .prev_choice .horde a .icon img {
+    background-color: rgb(97,5,5);
+    background-color: -moz-linear-gradient(top,  rgba(97,5,5,1) 0%, rgba(71,4,4,1) 100%);
+    background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(97,5,5,1)), color-stop(100%,rgba(71,4,4,1)));
+    background-color: -webkit-linear-gradient(top,  rgba(97,5,5,1) 0%,rgba(71,4,4,1) 100%);
+    background-color: -o-linear-gradient(top,  rgba(97,5,5,1) 0%,rgba(71,4,4,1) 100%);
+    background-color: -ms-linear-gradient(top,  rgba(97,5,5,1) 0%,rgba(71,4,4,1) 100%);
+    background-color: linear-gradient(to bottom,  rgba(97,5,5,1) 0%,rgba(71,4,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#610505', endColorstr='#470404',GradientType=0 );
+    background-position: -60px 0;
+}
+.block_title .prev_choice .dropdown-toggle .info_joueur,
+.block_title .prev_choice .dropdown-menu a .info_joueur,
+.block_title .prev_choice .dropdown-toggle .info_guild,
+.block_title .prev_choice .dropdown-menu a .info_guild {
+    margin-top: 4px;
+}
+.block_title .prev_choice .dropdown-toggle .info_joueur .nom_joueur,
+.block_title .prev_choice .dropdown-menu a .info_joueur .nom_joueur,
+.block_title .prev_choice .dropdown-toggle .info_guild .guild_name,
+.block_title .prev_choice .dropdown-menu a .info_guild .guild_name {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    display: inline-block;
+    width: 175px;
+    height: 28px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.block_title .prev_choice .dropdown-toggle .info_guild .guild_name,
+.block_title .prev_choice .dropdown-menu a .info_guild .guild_name  {
+    width: 230px;
+}
+.block_title .prev_choice .dropdown-toggle .info_joueur .nom_guilde,
+.block_title .prev_choice .dropdown-menu a .info_joueur .nom_guilde,
+.block_title .prev_choice .dropdown-toggle .info_guild .nb_members,
+.block_title .prev_choice .dropdown-menu a .info_guild .nb_members {
+    font-family: 'UbuntuLight';
+    font-size: 14px;
+    margin-top: -2px;
+}
+.block_title .prev_choice .dropdown-toggle .info_guild .nb_members,
+.block_title .prev_choice .dropdown-menu a .info_guild .nb_members {
+    color: white;
+}
+.block_title .prev_choice .alliance .info_joueur .nom_guilde,
+.block_title .prev_choice .alliance a .info_joueur .nom_guilde {
+    color: #6699cc;
+}
+.block_title .prev_choice .horde .info_joueur .nom_guilde,
+.block_title .prev_choice .horde a .info_joueur .nom_guilde {
+    color: #dd6160;
+}
+.block_title .prev_choice .dropdown-toggle .info_joueur .nom_guilde .text_nom_guilde,
+.block_title .prev_choice .dropdown-menu a .info_joueur .nom_guilde .text_nom_guilde {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    max-width: 160px;
+}
+.block_title .prev_choice .dropdown-toggle .info_joueur .nom_guilde .text_guilde_guillemet, .block_title .prev_choice .dropdown-menu a .info_joueur .nom_guilde .text_guilde_guillemet {
+    display: block;
+    float: left;
+}
+.block_title .prev_choice .dropdown-toggle .text, .block_title .prev_choice .dropdown-menu a .text {
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 17px;
+    font-family: 'UbuntuLight';
+    color: white;
+    margin-top: 18px;
+    text-overflow: ellipsis;
+}
+.block_title  .prev_choice .picto_Up {
+    display: none;
+}
+.block_title  .prev_choice .picto_Down {
+    display: inline-block;
+}
+.block_title  .prev_choice .picto_Up, .block_title  .prev_choice .picto_Down {
+    float: right;
+    margin: -18px 25px 0 0;
+    font-size: 14px;
+}
+.block_title  .prev_choice .alliance .picto_Up, .block_title  .prev_choice .alliance .picto_Down, .block_title  .prev_choice .horde .picto_Up, .block_title  .prev_choice .horde .picto_Down {
+    margin-top: -11px;
+}
+.block_title  .prev_choice .guild .picto_Up,
+.block_title  .prev_choice .guild .picto_Down {
+    margin-top: -32px;
+}
+.block_title .open {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px 3px 0 0;
+}
+.block_title .open > a:focus {
+    border-radius: 3px 3px 0 0;
+    background-color: rgb(51, 102, 204);
+}
+.block_title .open > a:focus .picto_Up {
+    display: inline-block;
+}
+.block_title .open > a:focus .picto_Down {
+    display: none
+}
+.block_title .prev_choice .dropdown-menu {
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    margin-top: 0px;
+    padding: 0;
+}
+.block_title .prev_choice .dropdown-menu a {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(13, 14, 15);
+    padding: 9px 0 0 10px;
+}
+.block_title .prev_choice .dropdown-menu a:hover {
+    background-color: rgb(39, 40, 42);
+}
+.block_title .prev_choice .dropdown-menu li:last-child a {
+    border-radius: 0 0 3px 3px;
+}
+
+@media screen and (max-width: 960px) {
+    .block_title .prev_choice .picto_Up,
+    .block_title .prev_choice .picto_Down {
+        float: none;
+        margin: 25px 0 0 21px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .block_title .prev_choice .picto_Up, .block_title .prev_choice .picto_Down {
+        margin-top: -18px;
+    }
+}
+

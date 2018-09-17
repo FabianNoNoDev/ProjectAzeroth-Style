@@ -1,0 +1,651 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,900,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+@import "libs/font-awesome.min.css";
+
+.container_card {
+    width: 325px;
+    height: 425px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card {
+    width: 325px;
+    height: 425px;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*.card .front {
+  background-image: url(../../styles/default/decks/cardback.png);
+}*/
+
+.card .back {
+    position: relative;
+    bottom: 435px;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card .back img{
+    width: 325px;
+    height: 425px;
+}
+
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.title-nav {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1em
+}
+
+.layer.layer--seethingshore {
+    z-index: 1;
+    background-image: url(../../images/layers/pvpcontents/pvpcontents-1.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--seethingshore h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--seethingshore h1 {
+    color: #bfccdd
+}
+
+.layer.layer--seethingshore p {
+    color: #ffffff
+}
+
+.pvpcontent-bal-icon {
+    margin-top: 25px;
+    margin-left: -150px;
+}
+
+.pvpcontent-jobb-icon {
+    margin-top: 25px;
+}
+
+.layer.layer--newarena1 {
+    z-index: 1;
+    background-image: url(../../images/layers/pvpcontents/pvpcontents-2.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--newarena1 h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--newarena1 h1 {
+    color: #bfccdd
+}
+
+.layer.layer--newarena1 p {
+    color: #ffffff
+}
+
+.layer.layer--newarena2 {
+    z-index: 1;
+    background-image: url(../../images/layers/pvpcontents/pvpcontents-3.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--newarena2 h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--newarena2 h1 {
+    color: #bfccdd
+}
+
+.layer.layer--newarena2 p {
+    color: #ffffff
+}
+
+.layer.layer--plunderchartedisland {
+    z-index: 1;
+    background-image: url(../../images/layers/pvpcontents/pvpcontents-4.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--plunderchartedisland h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--plunderchartedisland h1 {
+    color: #bfccdd
+}
+
+.layer.layer--plunderchartedisland p {
+    color: #ffffff
+}
+
+.Divider--ochoThin {
+    position: relative;
+    z-index: 2;
+    height: 15px;
+    background-position: 0px;
+    background-image: url(../../images/layers/borders/border-3.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.Divider--shopborder1 {
+    position: relative;
+    z-index: 2;
+    height: 15px;
+    background-position: 0px;
+    background-image: url(../../images/layers/borders/bordershop.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.Divider--ochoThickDown {
+    position: relative;
+    z-index: 2;
+    margin-top: -51px;
+    height: 115px;
+    background-position: -250px;
+    background-image: url(../../images/layers/borders/border-2.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.Divider--ochoThickDown2 {
+    position: relative;
+    z-index: 2;
+    margin-top: -51px;
+    height: 115px;
+    background-position: -250px;
+    background-image: url(../../images/layers/borders/border-5.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.Divider--ochoThickUp {
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    height: 115px;
+    background-position: -250px;
+    background-image: url(../../images/layers/borders/border-1.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.Divider--ochoThickUp2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -47px;
+    height: 115px;
+    background-position: -250px;
+    background-image: url(../../images/layers/borders/border-4.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--changelog1 h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--changelog1 h1 {
+    color: #bfccdd
+}
+
+.layer.layer--changelog1 p {
+    color: #ffffff
+}
+
+.layer.layer--voidelf {
+    z-index: 1;
+    background-image: url(../../images/layers/races/voidelf.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--voidelf h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--voidelf h1 {
+    color: #bfccdd
+}
+
+.layer.layer--voidelf p {
+    color: #ffffff
+}
+
+.layer.layer--hmtauren {
+    z-index: 1;
+    background-image: url(../../images/layers/races/hmtauren.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--hmtauren h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--hmtauren h1 {
+    color: #bfccdd
+}
+
+.layer.layer--hmtauren p {
+    color: #ffffff
+}
+
+.layer.layer--nbelf {
+    z-index: 1;
+    background-image: url(../../images/layers/races/nbelf.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--nbelf h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--nbelf h1 {
+    color: #bfccdd
+}
+
+.layer.layer--nbelf p {
+    color: #ffffff
+}
+
+.layer.layer--lfdraenei {
+    z-index: 1;
+    background-image: url(../../images/layers/races/lfdraenei.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--lfdraenei h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--lfdraenei h1 {
+    color: #bfccdd
+}
+
+.layer.layer--lfdraenei p {
+    color: #ffffff
+}
+
+.layer.layer--bolster {
+    z-index: 1;
+    background-image: url(../../images/layers/races/bolster.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--bolster h2 {
+    color: #f0bd7e
+}
+
+.layer.layer--bolster h1 {
+    color: #bfccdd
+}
+
+.layer.layer--bolster p {
+    color: #ffffff
+}
+
+.layer--pvecontents--top {
+    z-index: 1;
+    height: 305px;
+    background-image: url(../../images/layers/pvecontents/pvecontents-top.jpg)
+}
+
+.layer--pvpcontents--top {
+    z-index: 1;
+    height: 305px;
+    background-image: url(../../images/layers/pvpcontents/pvpcontents-top.jpg)
+}
+
+.layer--races--top {
+    z-index: 1;
+    height: 305px;
+    background-image: url(../../images/layers/races/races-top.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.layer.layer--white h21 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #C79C6E;
+}
+
+.layer.layer--white h22 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #F58CBA;
+}
+
+.layer.layer--white h23 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #ABD473;
+}
+
+.layer.layer--white h24 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #FFF569;
+}
+
+.layer.layer--white h25 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.layer.layer--white h26 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #C41F3B;
+}
+
+.layer.layer--white h27 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #0070DE;
+}
+
+.layer.layer--white h28 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #69CCF0;
+}
+
+.layer.layer--white h29 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #9482C9;
+}
+
+.layer.layer--white h210 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #00FF96;
+}
+
+.layer.layer--white h211 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #FF7D0A;
+}
+
+.layer.layer--white h212 {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-size: 20px;
+    color: #A330C9;
+}
+
+.btn-donate{
+  border: 1px solid black;
+  padding: 15px 108px;
+  color: white;
+}
+
+.btn-ac {background-color: #e2c146;} /* Orange */
+.btn-acf {background-color: #008CBA;} /* Blue */
+
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select2 {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 545px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select2 select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select input {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select2 input {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.l-footershop {
+    background: url(../../images/layers/marketplace/shopbottom.jpg) center no-repeat;
+    background-color: #00254f;
+    padding-bottom: 50px;
+    color: #4aa8de
+}
+
+.l-footershop .l-footer__logo {
+    width: 30px;
+    margin-right: 8px
+}
+
+.l-footershop ul.l-footer__news-list {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #4aa8de;
+    list-style-type: none
+}
+
+.l-footershop ul.l-footer__news-list li {
+    padding: 20px 0 20px 50px;
+    border-bottom: 1px solid #4c4c4e;
+    background: url(../../images/pages/global/icon_footer-new.png) left center no-repeat
+}
+
+.l-footershop ul.l-footer__news-list li a {
+    display: block;
+    color: #fffaf6;
+}
+
+.l-footershop ul.l-footer__news-list li:last-child {
+    border-bottom: none;
+}
+
+.l-footershop .l-footer__sn-co .l-footer__sn-co__icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 5px;
+    -webkit-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s
+}
+
+.l-footershop .l-footer__sn-co .l-footer__sn-co__icon:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.l-footershop .l-footer__sn-co .l-footer__sn-co__icon.l-footer__sn-co__icon--tech {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%)
+}
+
+.l-footershop .l-footer__sn-co .l-footer__sn-co__icon.l-footer__sn-co__icon--tech:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0)
+}
+
+.l-footershop .l-footer__sn-co .l-footer__sn-co__icon img {
+    width: 40px;
+    height: 40px
+}
+
+.layer.layer--shoptop {
+    z-index: 1;
+    background-image: url(../../images/layers/marketplace/shoptop.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #00254f;
+}
+
+.layer.layer--shopmiddle {
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00254f;
+}
+
+.layer--alteracbrewpup-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/alteracbrewpup.jpg);
+    background-position: center center
+}
+
+/*Karakter tevékenységek*/
+.layer--charunstuck-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/charunstuck.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2d170a;
+}
+
+.layer--charboost-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/charboost.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2d170a;
+}
+
+.layer--charrename-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/charrename.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2d170a;
+}
+
+.layer--charcostumization-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/charcostumization.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2d170a;
+}
+
+.layer--charracechange-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/charracechange.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2d170a;
+}
+
+.layer--charfactionchange-top {
+    width: 100%;
+    height: 552px;
+    padding: 0;
+    background-image: url(../../images/layers/marketplace/charfactionchange.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2d170a;
+}
+/*Karakter tevékenységek*/
+
+.kifli1 {
+    box-shadow: 0px 0px 10px black;
+}

@@ -1,0 +1,1390 @@
+.block_account {
+    display: inline-block;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.block_account .main_block {
+    width: 1261px;
+    margin: 0 auto 0 auto;
+}
+.block_account .main_block .block_character {
+    width: 630px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px 0 0 3px;
+    display: inline-block;
+    border-right: 1px solid rgba(44, 54, 62, 0.4);
+    vertical-align: top;
+    margin-right: -4px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.block_account .main_block .block_character.alliance {
+    background-image: url('../img/account/bg_alliance.png');
+}
+.block_account .main_block .block_character.horde {
+    background-image: url('../img/account/bg_horde.png');
+}
+.block_account .main_block .block_character .avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+.block_account .main_block .block_character .img_avatar {
+    width: 190px;
+    height: 190px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.block_account .main_block .block_character .char_icon {
+    width: 190px;
+    height: 190px;
+    margin-top: -190px;
+    z-index: 3;
+    position: relative;
+}
+.block_account .main_block .block_character .char_icon .icon_vip {
+    width: 95px;
+    height: 190px;
+    float: left;
+}
+.block_account .main_block .block_character .char_icon .icon_vip .picto_VIP {
+    color: #C93;
+    font-size: 38px;
+    text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.75);
+    margin: -4px 0 0 12px;
+}
+.block_account .main_block .block_character .char_icon .char_level {
+    width: 95px;
+    height: 190px;
+    float: right;
+    padding-top: 134px;
+}
+.block_account .main_block .block_character .char_icon .char_level .level {
+    background-color: rgb(51, 102, 204);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: white;
+    font-family: 'UbuntuBold';
+    text-align: center;
+    margin: 0 5px 0 auto;
+    padding-top: 9px;
+}
+.block_account .main_block .block_character .account_banned {
+    width: 210px;
+    height: 220px;
+    border-radius: 10px;
+    background-image: -moz-linear-gradient( 90deg, rgb(102,10,10) 0%, rgba(150,15,15,0.90196) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(102,10,10) 0%, rgba(150,15,15,0.90196) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(102,10,10) 0%, rgba(150,15,15,0.90196) 100%);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    top: -205px;
+    left: -10px;
+    z-index: 4;
+    position: relative;
+    text-align: center;
+}
+.block_account .main_block .block_character .account_banned  .title {
+    font-size: 18px;
+    font-family: 'UbuntuBold';
+    color: white;
+    text-transform: uppercase;
+    height: 55px;
+    padding-top: 23px;
+}
+.block_account .main_block .block_character .account_banned .reason {
+    height: 115px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 10px 10px;
+}
+.block_account .main_block .block_character .account_banned .reason  .reason_content {
+    max-height: 100px;
+    overflow: hidden;
+}
+.block_account .main_block .block_character .account_banned .reason .reason_title {
+    font-family: 'UbuntuBold';
+}
+.block_account .main_block .block_character .account_banned .reason .reason_text {
+    font-family: 'UbuntuLight';
+    opacity: 0.8;
+}
+.block_account .main_block .block_character .account_banned .duration {
+    width: 210px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'UbuntuLight';
+}
+.block_account .main_block .block_character .account_banned .duration span {
+    margin-right: 5px;
+}
+.block_account .main_block .block_character  .char_info {
+    display: inline-block;
+    margin-left: 20px;
+}
+.block_account .main_block .block_character  .char_info .char_name {
+    font-family: 'ElanITCStdBold';
+    font-size: 40px;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 360px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.block_account .main_block .block_character .char_info .char_name .char_name_temp {
+    font-size:24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+.block_account .main_block .block_character  .char_info .char_detail,
+.block_account .main_block .block_character  .char_info .char_realm_expansion {
+    font-size: 16px;
+    font-family: 'UbuntuLight';
+    margin-bottom: 10px;
+}
+.block_account .main_block .block_character  .char_info .char_detail .char_class,
+.block_account .main_block .block_character  .char_info .char_detail .char_race {
+    display: inline-block;
+    text-transform: capitalize;
+}
+.block_account .main_block .block_character  .char_info .char_detail img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B1B2B4 #434445 #2F3032;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.block_account .main_block .block_character  .char_info .char_realm_expansion img {
+    margin-right: 5px;
+}
+.block_account .main_block .block_character  .char_info .btn_char {
+    width: 260px;
+    height: 40px;
+    font-family: 'UbuntuLight';
+    margin-top: 2px;
+}
+.block_account .main_block .block_character  .vip {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(204, 153, 51);
+    border-radius: 2px 0 0 2px;
+    color: white;
+    font-family: 'UbuntuBold';
+    float: right;
+    margin: -5px -26px 0 0;
+    border-right: 1px solid #A2833F;
+    text-align: center;
+    padding-top: 4px;
+}
+.block_account .main_block .block_points {
+    width: 320px;
+    height: 240px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+    border-right: 1px solid rgba(44, 54, 62, 0.4);
+    margin-right: -4px;
+    padding-top: 40px;
+    text-align: center;
+}
+.block_account .main_block .block_points .points {
+    font-size: 32px;
+    font-family: 'ElanITCStdBold';
+    color: white;
+    text-align: right;
+    padding-right: 70px;
+}
+.block_account .main_block .block_points .points img {
+    margin-top: -4px;
+}
+.block_account .main_block .block_points .btn_buy_points {
+    width: 190px;
+    height: 40px;
+    font-family: 'UbuntuLight';
+    margin-top: 19px;
+}
+.block_account .main_block .block_points .log_store {
+    font-size: 13px;
+    font-family: 'UbuntuLight';
+    color: white;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.block_account .main_block .block_points .log_store a {
+    color: white;
+}
+.block_account .main_block .block_points .log_store:hover {
+    opacity: 0.8;
+}
+.block_account .main_block .block_log {
+    width: 310px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+    vertical-align: top;
+}
+.block_account .main_block .block_log .log {
+    width: 310px;
+    height: 120px;
+    padding-top: 17px;
+}
+.block_account .main_block .block_log a:first-child .log {
+    height: 121px;
+    border-bottom: 1px solid rgba(44, 54, 62, 0.4);
+}
+.block_account .main_block .block_log .log:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.block_account .main_block .block_log .log:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.block_account .main_block .block_log .log .last_connection {
+    font-size: 13px;
+    font-family: 'UbuntuLight';
+    color: #869EAE;
+    text-transform: uppercase;
+    text-align: center;
+}
+.block_account .main_block .block_log .log .ip {
+    font-family: 'UbuntuBold';
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+.block_account .main_block .block_log .log .date {
+    font-family: 'UbuntuLight';
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -5px;
+}
+.block_account .main_block .block_log .log .picto_Next {
+    color: #384149;
+    font-size: 42px;
+    float: right;
+    margin-top: -64px;
+    margin-right: 5px;
+}
+.block_account .main_block .block_log a:first-child .log .picto_Next {
+    margin-top: -55px;
+}
+.block_account .block_services {
+    width: 1260px;
+    margin: 50px auto 0 auto;
+}
+.block_account .block_services .login,
+.block_account .block_services .unblock_char,
+.block_account .block_services .authentificator,
+.block_account .block_services .code_promo {
+    height: 300px;
+    display: inline-block;
+    margin-right: -4px;
+    text-align: center;
+    vertical-align: top;
+}
+.block_account .block_services .unblock_char,
+.block_account .block_services .authentificator,
+.block_account .block_services .code_promo  {
+    background-image: url('../img/account/bg_services.png');
+    background-position: center;
+}
+.block_account .block_services .unblock_char {
+    background-position: 0 -300px;
+}
+.block_account .block_services .authentificator.active {
+    background-position: -310px 0;
+}
+.block_account .block_services .authentificator.unactive {
+    background-position: 0 0;
+}
+.block_account .block_services .code_promo {
+    background-position: -310px -300px;
+}
+.block_account .block_services .login {
+    width: 310px;
+    border-right: 1px solid #2F3E49;
+}
+.block_account .block_services .unblock_char {
+    width: 320px;
+    border-right: 1px solid #2F3E49;
+}
+.block_account .block_services .authentificator {
+    width: 320px;
+    border-right: 1px solid #2F3E49;
+}
+.block_account .block_services .code_promo {
+    width: 310px;
+}
+.block_account .block_services .login .title_service,
+.block_account .block_services .unblock_char .title_service,
+.block_account .block_services .authentificator .title_service,
+.block_account .block_services .code_promo .title_service {
+  font-size: 20px;
+  font-family: 'UbuntuBold';
+  color: white;
+}
+.block_account .block_services .login .info {
+    text-align: left;
+    margin-top: 39px;
+    height: 192px;
+}
+.block_account .block_services .login .info .email,
+.block_account .block_services .login .info .mdp {
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    color: #869eae;
+    font-size: 13px;
+}
+.block_account .block_services .login .info .mdp {
+    margin-top: 26px;
+}
+.block_account .block_services .login .info .email_content,
+.block_account .block_services .login .info .mdp_content {
+    font-family: 'UbuntuLight';
+    color: white;
+}
+.block_account .block_services .login .info .unvalidated_email,
+.block_account .block_services .login .info .change_username
+{
+    font-size: 12px;
+    font-family: 'UbuntuBold';
+    color: #3366CC;
+    margin-top: 7px;
+    clear: both;
+    width: 100%;
+}
+.block_account .block_services .login .info .unvalidated_email .picto_Aide,
+.block_account .block_services .login .info .change_username .picto_Aide
+{
+    color: #283641;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: rgb(51, 102, 204);
+    border-radius: 50%;
+    font-size: 9px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1px;
+}
+.block_account .block_services .login .info .unvalidated_email .btn_send_valid,
+.block_account .block_services .login .info .change_username .btn_send_username
+{
+    width: auto;
+    height: 25px;
+    border-radius: 3px;
+    color: #869eae;
+    font-family: 'UbuntuBold';
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    float: right;
+    text-align: center;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-right: 20px;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.block_account .block_services .login .info .unvalidated_email .btn_send_valid:hover,
+.block_account .block_services .login .info .change_username .btn_send_username:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.block_account .block_services .login .info .unvalidated_email .btn_send_valid:active,
+.block_account .block_services .login .info .change_username .btn_send_username:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.block_account .block_services .login  .btn_edit_login,
+.block_account .block_services .unblock_char  .btn_unblock_char,
+.block_account .block_services .authentificator  .btn_authentificator,
+.block_account .block_services .code_promo  .btn_code_promo {
+    width: 140px;
+    height: 40px;
+    font-family: 'UbuntuLight';
+}
+.block_account .block_services .login  .btn_edit_login {
+    text-transform: capitalize;
+}
+.block_account .block_services .unblock_char  .btn_unblock_char {
+    margin-top: 231px;
+}
+.block_account .block_services .authentificator .info {
+    margin-top: 39px;
+    height: 192px;
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+    padding: 140px 20px 0 20px;
+}
+.block_account .block_services .code_promo .info {
+    margin-top: 39px;
+    height: 192px;
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+    padding: 125px 20px 0 20px;
+}
+.block_account .block_services .code_promo .input_code {
+    height: 40px;
+    padding: 0 20px 0 20px;
+}
+.block_account .block_services .code_promo .input_code .form-control {
+    width: 200px;
+    display: inline-block;
+    height: 40px;
+}
+.block_account .block_services .code_promo .btn_valid_code {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+}
+.block_account .block_shop_support {
+    width: 620px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 80px auto 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width:640px) {
+  .block_account .block_shop_support {
+    text-align: center;
+    height: 235px;
+    width: auto;
+    margin-top: 0px;
+  }
+  .block_account .main_block .block_points {
+    width: 300px;
+    border: none;
+    margin: 5px 0 0 0;
+    border-radius: 3px 3px 0 0;
+  }
+
+}
+
+.block_account .block_shop_support:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.block_account .block_shop_support .picto_Aide {
+    font-size: 34px;
+    border-radius: 125px;
+    padding: 11px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.block_account .block_shop_support .title {
+    font-family: "Elan ITC Std";
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: -3px;
+}
+.block_account .block_shop_support .sub_title {
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 13px;
+    font-weight: lighter;
+}
+.block_account .block_shop_support .btn {
+    float: right;
+    margin-top: -47px;
+    border: medium none;
+    font-family: "UbuntuLight";
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+}
+.block_account .log_connections table {
+    width: 100%;
+    border: 1px solid #384650;
+    border-radius: 3px;
+}
+.block_account .log_connections table {
+    width: 100%;
+    border: 1px solid #384650;
+    border-radius: 3px;
+}
+.block_account .log_connections table tr {
+    height: 50px;
+}
+.block_account .log_connections table thead tr {
+    background-color: rgb(38, 50, 58);
+}
+.block_account .log_connections table thead tr th {
+    font-family: 'UbuntuBold';
+    color: #869eae;
+    font-size: 18px;
+    text-align: center;
+}
+.block_account .log_connections table thead tr th::first-letter{
+    text-transform: uppercase;
+}
+.block_account .log_connections table thead tr th:not(:last-child) {
+    border-right: 1px solid #313E47;
+}
+.block_account .log_connections table tbody tr {
+    background-color: rgb(11, 19, 25);
+}
+.block_account .log_connections table tbody tr.log-success {
+    background-color: rgba(83, 182, 24, 0.5);
+}
+.block_account .log_connections table tbody tr.log-failure {
+    background-color: rgba(255, 51, 51, 0.5);
+}
+.block_account .log_connections table tbody tr:not(.log-success):not(.log-failure):hover {
+    background-color: rgb(0, 0, 0);
+}
+.block_account .log_connections table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #313E47;
+}
+.block_account .log_connections table tbody tr td {
+    font-family: 'UbuntuLight';
+    text-align: center;
+}
+.block_account .log_connections table tbody tr td:not(:last-child) {
+    border-right: 1px solid #313E47;
+}
+.block_account .block_logs table {
+    width: 100%;
+    border: 1px solid #384650;
+    border-radius: 3px;
+}
+.block_account .block_logs table tr {
+    height: 50px;
+}
+.block_account .block_logs table thead tr {
+    background-color: rgb(38, 50, 58);
+}
+.block_account .block_logs table thead tr th {
+    font-family: 'UbuntuBold';
+    color: #869eae;
+    font-size: 18px;
+    text-align: center;
+}
+.block_account .block_logs table thead tr th:not(:last-child) {
+    border-right: 1px solid #313E47;
+}
+.block_account .block_logs table thead tr th::first-letter
+{
+    text-transform: uppercase;
+}
+.block_account .block_logs table tbody tr {
+    background-color: rgb(11, 19, 25);
+}
+.block_account .block_logs table tbody tr.log-success {
+    background-color: rgba(83, 182, 24, 0.5);
+}
+.block_account .block_logs table tbody tr.log-failure {
+    background-color: rgba(255, 51, 51, 0.5);
+}
+.block_account .block_logs table tbody tr:not(.log-success):not(.log-failure):hover {
+    background-color: rgb(0, 0, 0);
+}
+.block_account .block_logs table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #313E47;
+}
+.block_account .block_logs table tbody tr td {
+    font-family: 'UbuntuLight';
+    text-align: center;
+    padding: 4px;
+}
+.block_account .block_logs table tbody tr td:not(:last-child) {
+    border-right: 1px solid #313E47;
+}
+.block_account .block_logs table tbody tr td.item_icon_container {
+    border-right : 0px none;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 66px;
+}
+.block_account .block_logs table tbody tr td.item_icon_container .icon_item {
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 56px;
+    height: 56px;
+}
+.block_account .block_logs table tbody tr td .name_item {
+    overflow: hidden;
+    display: block;
+    font-family: 'UbuntuLight';
+    text-overflow: ellipsis;
+    width : 100%;
+    margin-left: 0px;
+    text-align: left;
+}
+.block_account .block_logs table tbody tr td .name_item.tooltip-item{
+    text-decoration: underline;
+}
+.block_account .block_logs_controls
+{
+    text-align: center;
+}
+.bg_change_login {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg_change_login .block_account {
+    margin-bottom: 0;
+}
+.bg_change_login .block_account .block_modif_login {
+    width: 1260px;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 20px 0;
+}
+.bg_change_login .block_account .block_modif_login .close_window {
+    float: right;
+    position: relative;
+    margin-bottom: -20px;
+    cursor: pointer;
+    color: white;
+}
+.bg_change_login .block_account .block_modif_login .close_window:hover {
+    opacity: 0.8;
+}
+.bg_change_login .block_account .block_modif_login .modif {
+    width: 630px;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.bg_change_login .block_account .block_modif_login .modif:nth-child(2) {
+    border-right: 1px solid #2F3E49;
+}
+.bg_change_login .block_account .block_modif_login .modif .modif_title {
+    font-size: 20px;
+    color: white;
+    font-family: 'UbuntuBold';
+    text-align: center;
+    margin-bottom: 29px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace {
+    text-align: center;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .old,
+.bg_change_login .block_account .block_modif_login .modif .replace .new {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .old {
+    margin-right: 5px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .new {
+    margin-left: 5px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .detail {
+    font-family: 'UbuntuLight';
+    text-transform: uppercase;
+    color: #869EAE;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group {
+    margin-bottom: 20px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group,
+.bg_change_login .block_account .block_modif_login .modif .replace .form-control {
+    height: 40px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.error .form-control,
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.error .input-group-addon {
+    border-top: 2px solid #FF3333;
+    border-bottom: 2px solid #FF3333;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.error .form-control {
+    border-right: 2px solid #FF3333;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.error .input-group-addon {
+    border-left: 2px solid #FF3333;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.success .form-control,
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.success .input-group-addon {
+    border-top: 2px solid #53B618;
+    border-bottom: 2px solid #53B618;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.success .form-control {
+    border-right: 2px solid #53B618;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .input-group.success .input-group-addon {
+    border-left: 2px solid #53B618;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .block_feedback {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    font-family: 'UbuntuLight';
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    margin-top: -5px;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .block_feedback.error {
+    border: 1px solid rgba(255, 51, 51, 0.2);
+    color: #ff3333;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .block_feedback.success {
+    border: 1px solid rgba(83, 182, 24, 0.2);
+    color: #53b618;
+}
+.bg_change_login .block_account .block_modif_login .modif .replace .btn_valid_change {
+    width: auto;
+    height: 40px;
+    font-family: "UbuntuLight";
+    margin-top: 18px;
+}
+.block_account_choix .account_choix {
+    width: 300px;
+    height: 370px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 8px 20px 8px;
+    vertical-align: top;
+}
+.block_account_choix .expansion {
+    background-image: url('../img/expansion/big.png');
+}
+.block_account_choix .tlk {
+    background-position: -300px 0px;
+}
+.block_account_choix .cata {
+    background-position: 0px 0px;
+}
+.block_account_choix .mop {
+    background-position: 0px -370px;
+}
+.block_account_choix .wod {
+    background-position: -300px -370px;
+}
+.block_account_choix .realm {
+    background-image: url('../img/realm/big.png');
+}
+.block_account_choix .grommash {
+    background-position: 0px 0px;
+}
+.block_account_choix .main-noire {
+    background-position: -300px 0px;
+}
+.block_account_choix .sombraluna {
+    background-position: 0px -370px;
+}
+.block_account_choix .thrall {
+    background-position: -300px -370px;
+}
+.block_account_choix .tournament {
+    background-position: -600px 0;
+}
+.block_account_choix .rassharom {
+    background-position: -900px 0;
+}
+.block_account_choix .taran-zhu {
+    background-position: -900px -370px;
+}
+.block_account_choix .menethil {
+    background-position: -1200px 0;
+}
+.block_account_choix .hellscream {
+    background-position: -1200px -370px;
+}
+.block_account_choix .pandaria {
+    background-position: 0 -740px;
+}
+.block_account_choix .aile-de-mort {
+    background-position: -300px -740px;
+}
+.block_account_choix .deathwing {
+    background-position: -300px -740px;
+}
+.block_account_choix .dalaran {
+    background-position: -600px -740px;
+}
+.block_account_choix .ragnaros {
+    background-position: -900px -740px;
+}
+.block_account_choix .perso {
+    background-image: url('../img/background/bg_perso_faction.png');
+}
+.block_account_choix .alliance {
+    background-position: 0px 0px;
+}
+.block_account_choix .horde {
+    background-position: -300px 0px;
+}
+.block_account_choix .account_choix .content {
+    width: 300px;
+    height: 370px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 225px 30px 0 30px;
+    z-index: 1;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+}
+.block_account_choix .account_choix .content:after {
+    position: absolute;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(51,102,204,1) 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(99%,rgba(51,102,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3366cc',GradientType=0 ); /* IE6-9 */
+    content: '';
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+.block_account_choix .account_choix .content:hover:after {
+    opacity: 1;
+}
+.block_account_choix .categ .content {
+    padding: 0;
+}
+.block_account_choix .wish.big .content {
+    width: 620px;
+    height: 370px;
+}
+.block_account_choix .categ .content .image_categ {
+    width: 300px;
+    height: 370px;
+}
+.block_account_choix .categ .content .nom_categ {
+    width: 300px;
+    height: 370px;
+    margin-top: -370px;
+    padding: 290px 10px 0 10px;
+}
+.block_account_choix .categ .content .nom_categ h3 {
+    text-transform: uppercase;
+    font-family: 'ElanITCStdBold';
+    font-size: 22px;
+    display: block;
+    height: 60px;
+    color: white;
+}
+.block_account_choix .realm .content {
+    padding: 288px 30px 0 30px;
+}
+.block_account_choix .account_choix .content h3 {
+    text-transform: uppercase;
+    font-family: 'ElanITCStdBold';
+    font-size: 22px;
+    display: block;
+    height: 41px;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+.block_account_choix .account_choix .content .nb_perso {
+    color: white;
+    font-family: 'UbuntuBold';
+    font-size: 19px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+.block_account_choix .account_choix .content .btn {
+    border: none;
+    font-family: 'UbuntuLight';
+    width: 160px;
+    height: 40px;
+    margin-top: 27px;
+    position: relative;
+    z-index: 3;
+}
+.block_account_choix .account_choix .content .btn .picto_Next {
+    font-size: 10px;
+}
+.block_account_choix .perso .info {
+    width: 300px;
+    height: 30px;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+.block_account_choix .perso .info .race, .block_account_choix .perso .info .classe {
+    color: white;
+    font-family: 'UbuntuBold';
+}
+.block_account_choix .perso .info .niveau {
+    color: #63e900;
+    font-family: 'UbuntuLight';
+}
+.block_account_choix .perso .perso3d {
+    width: 300px;
+    height: 260px;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    position: relative;
+}
+.block_account_choix .perso .perso3d:after {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(51,102,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(51,102,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(51,102,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3366cc',GradientType=0 ); /* IE6-9 */
+    transition: opacity 0.5s ease-out;
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.block_account_choix .perso:hover .perso3d:after {
+    opacity: 1;
+}
+.block_account_choix .perso .perso3d img {
+    width: 260px;
+    height: 260px;
+}
+.block_account_choix .perso .main_info {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(21, 31, 39);
+    border-radius: 0 0 3px 3px;
+    padding-top: 13px;
+}
+.block_account_choix .perso .main_info .icon {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -3px;
+    margin-right: 14px;
+}
+.block_account_choix .perso .main_info .icon img {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+}
+.block_account_choix .perso .main_info .nom_joueur {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 28px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.block_account_choix .perso .main_info .nom_guilde {
+    font-family: 'UbuntuLight';
+    font-size: 14px;
+    margin-top: -2px;
+}
+.block_account_choix .perso .main_info .deleted_date {
+    font-family: 'UbuntuLight';
+    font-size: 14px;
+    color: #DD6160;
+}
+.block_account_choix .alliance .main_info .nom_guilde {
+    color: #6699cc;
+}
+.block_account_choix .horde .main_info .nom_guilde {
+    color: #dd6160;
+}
+.block_account_choix .perso .main_info .nom_guilde .text_nom_guilde {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    max-width: 170px;
+}
+.block_account_choix .perso .main_info .nom_guilde .text_guilde_guillemet {
+    display: block;
+    float: left;
+}
+.block_account_plus {
+    height: 170px;
+}
+.block_account_plus .account_plus {
+    width: 620px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 10px 0 10px;
+    padding: 20px;
+}
+.block_account_plus .account_plus:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.block_account_plus .vip {
+    color: #cc9933;
+}
+.block_account_plus .help {
+    color: white;
+}
+.block_account_plus .vip .icon_title {
+    border: 1px solid rgba(204, 153, 51, 0.2);
+}
+.block_account_plus .help .icon_title {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.block_account_plus .account_plus .icon_title {
+    font-size: 34px;
+    border-radius: 125px;
+    padding: 11px;
+    float: left;
+    margin-right: 20px;
+}
+.block_account_plus .account_plus h4 {
+    font-family: 'ElanITCStdBold';
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: -3px;
+}
+.block_account_plus .account_plus h5 {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    font-weight: lighter;
+}
+.block_account_plus .account_plus .btn {
+    float: right;
+    margin-top: -50px;
+    border: none;
+    font-family: 'UbuntuLight';
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+}
+.block_title .button_prev {
+    float: left;
+    font-family: 'UbuntuLight';
+    height: 40px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.block_account_plus .account_plus .btn .picto_Next {
+    font-size: 10px;
+}
+.block_account_choix {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 1280px) {
+    .block_account_choix .account_choix:not(.perso) {
+        width: 220px;
+        height: 270px;
+        border-radius: 2px;
+    }
+    .block_account_choix .account_choix .content {
+        width: 220px;
+        height: 270px;
+        border-radius: 2px;
+        text-align: center;
+        padding: 150px 15px 0 15px;
+    }
+    .block_account_choix .expansion {
+        background-image: url('../img/expansion/small.png');
+    }
+    .block_account_choix .tlk {
+        background-position: -220px 0px;
+    }
+    .block_account_choix .cata {
+        background-position: 0px 0px;
+    }
+    .block_account_choix .mop {
+        background-position: 0px -270px;
+    }
+    .block_account_choix .wod {
+        background-position: -220px -270px;
+    }
+    .block_account_choix .realm {
+        background-image: url('../img/realm/small.png');
+    }
+    .block_account_choix .grommash {
+        background-position: 0px 0px;
+    }
+    .block_account_choix .main-noire {
+        background-position: -220px 0px;
+    }
+    .block_account_choix .sombraluna {
+        background-position: 0px -270px;
+    }
+    .block_account_choix .thrall {
+        background-position: -220px -270px;
+    }
+    .block_account_choix .tournament {
+        background-position: -440px 0;
+    }
+    .block_account_choix .rassharom {
+        background-position: -660px 0;
+    }
+    .block_account_choix .taran-zhu {
+        background-position: -660px -370px;
+    }
+    .block_account_choix .menethil {
+        background-position: -880px 0;
+    }
+    .block_account_choix .hellscream {
+        background-position: -880px -270px;
+    }
+    .block_account_choix .pandaria {
+        background-position: 0 -540px;
+    }
+    .block_account_choix .aile-de-mort {
+        background-position: -220px -540px;
+    }
+    .block_account_choix .deathwing {
+        background-position: -220px -540px;
+    }
+    .block_account_choix .dalaran {
+        background-position: -440px -540px;
+    }
+    .block_account_choix .ragnaros {
+        background-position: -660px -540px;
+    }
+    .block_account .main_block {
+        width: 930px;
+    }
+    .block_account .main_block .block_character {
+        width: 930px;
+    }
+    .block_account .main_block .block_points {
+        border-radius: 0 0 0 3px;
+        border-top: 1px solid rgba(44, 54, 62, 0.4);
+    }
+    .block_account .main_block .block_log {
+        width: 610px;
+        border-radius: 0 0 3px 0;
+        border-top: 1px solid rgba(44, 54, 62, 0.4);
+    }
+    .block_account .main_block .block_log .log {
+        width: 100%;
+    }
+    .block_account .block_services {
+        width: 636px;
+    }
+    .block_account .block_services .unblock_char {
+        border-right: none;
+    }
+    .block_account .block_services .login,
+    .block_account .block_services .unblock_char,
+    .block_account .block_services .authentificator,
+    .block_account .block_services .code_promo {
+        width: 320px;
+    }
+    .block_account .block_services .authentificator,
+    .block_account .block_services .code_promo {
+        margin-top: 50px;
+    }
+    .bg_change_login .block_account .block_modif_login {
+        width: 960px;
+        text-align: center;
+    }
+    .bg_change_login .block_account .block_modif_login .modif:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid #2F3E49;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .block_account_choix .account_choix {
+        width: 300px !important;
+        height: 370px !important;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 0 8px 20px 8px;
+        vertical-align: top;
+    }
+    .block_account_choix .account_choix .content {
+        width: 300px;
+        height: 370px;
+        border-radius: 3px;
+        text-align: center;
+        padding: 225px 30px 0 30px;
+    }
+    .block_account_choix .expansion {
+        background-image: url('../img/expansion/big.png');
+    }
+    .block_account_choix .tlk {
+        background-position: -300px 0px;
+    }
+    .block_account_choix .cata {
+        background-position: 0px 0px;
+    }
+    .block_account_choix .mop {
+        background-position: 0px -370px;
+    }
+    .block_account_choix .wod {
+        background-position: -300px -370px;
+    }
+    .block_account_choix .realm {
+        background-image: url('../img/realm/big.png');
+    }
+    .block_account_choix .grommash {
+        background-position: 0px 0px;
+    }
+    .block_account_choix .main-noire {
+        background-position: -300px 0px;
+    }
+    .block_account_choix .sombraluna {
+        background-position: 0px -370px;
+    }
+    .block_account_choix .thrall {
+        background-position: -300px -370px;
+    }
+    .block_account_choix .tournament {
+        background-position: -600px 0;
+    }
+    .block_account_choix .rassharom {
+        background-position: -900px 0;
+    }
+    .block_account_choix .taran-zhu {
+        background-position: -900px -370px;
+    }
+    .block_account_choix .menethil {
+        background-position: -1200px 0;
+    }
+    .block_account_choix .hellscream {
+        background-position: -1200px -370px;
+    }
+    .block_account_choix .pandaria {
+        background-position: 0 -740px;
+    }
+    .block_account_choix .aile-de-mort {
+        background-position: -300px -740px;
+    }
+    .block_account_choix .deathwing {
+        background-position: -300px -740px;
+    }
+    .block_account_choix .dalaran {
+        background-position: -600px -740px;
+    }
+    .block_account_choix .ragnaros {
+        background-position: -900px -740px;
+    }
+    .block_account .main_block {
+        width: 630px;
+    }
+    .block_account .main_block .block_character {
+        width: 630px;
+    }
+    .block_account .main_block .block_points {
+        border-radius: 0 0 0 3px;
+        border-top: 1px solid rgba(44, 54, 62, 0.4);
+    }
+    .block_account .main_block .block_log {
+        width: 310px;
+        border-radius: 0 0 3px 0;
+        border-top: 1px solid rgba(44, 54, 62, 0.4);
+    }
+    .block_account .main_block .block_log .log {
+        width: 100%;
+    }
+    .block_account .block_services {
+        width: 630px;
+    }
+    .block_account .block_services .unblock_char {
+        border-right: none;
+    }
+    .block_account .block_services .login,
+    .block_account .block_services .unblock_char,
+    .block_account .block_services .authentificator,
+    .block_account .block_services .code_promo {
+        width: 315px;
+    }
+    .block_account .block_services .authentificator,
+    .block_account .block_services .code_promo {
+        margin-top: 50px;
+    }
+    .bg_change_login .block_account .block_modif_login {
+        width: 640px;
+        text-align: center;
+    }
+    .bg_change_login .block_account .block_modif_login .modif:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid #2F3E49;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:640px) {
+    .block_account .main_block {
+        width: 300px;
+    }
+    .block_account .main_block .block_character {
+        width: 300px;
+        height: auto;
+        background-position: right bottom;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+    }
+    .block_account .main_block .block_character .char_info {
+        text-align: left;
+    }
+    .block_account .main_block .block_character .char_info .btn_char {
+        width: 210px;
+        height: 55px;
+        white-space: normal;
+    }
+    .block_account .main_block .block_points {
+        border: none;
+        margin: 5px 0 0 0;
+        border-radius: 3px 3px 0 0;
+    }
+    .block_account .main_block .block_log {
+        width: 300px;
+        border-radius: 0 0 3px 3px;
+    }
+    .block_account .block_services {
+        width: 300px;
+    }
+    .block_account .block_services .login,
+    .block_account .block_services .authentificator{
+        border: none;
+    }
+    .block_account .block_services .login,
+    .block_account .block_services .unblock_char,
+    .block_account .block_services .authentificator,
+    .block_account .block_services .code_promo {
+        width: 300px;
+        margin: 0 0 25px 0;
+    }
+    .block_account .block_shop_support .picto_Aide {
+        float: none;
+    }
+    .block_account .block_shop_support .title {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .block_account .block_shop_support .sub_title {
+        margin-top: 10px;
+    }
+    .block_account .block_shop_support .btn {
+        float: none;
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,1413 @@
+#header_background {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    box-shadow:0px 2px 5px #333333;
+    z-index: 1000;
+}
+header {
+    width: 100%;
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+}
+
+header #lang_bar {
+    height: 20px;
+    margin: auto;
+    background-color: #162127;
+}
+header #lang_bar .menu_lang {
+    list-style-type: none;
+    text-align: center;
+    float: right;
+}
+header #lang_bar .menu_lang li {
+    width: 60px;
+}
+header #lang_bar .menu_lang a {
+    display: block;
+    height: 21px;
+    padding-top: 1px;
+}
+header #lang_bar .menu_lang a:hover {
+    text-decoration:none;
+}
+header #lang_bar .menu_lang .dropdown-toggle {
+    color: white;
+    font-family: UbuntuLight;
+    font-size: 12.5px;
+}
+header #lang_bar .menu_lang .dropdown-toggle .picto_Down {
+    display: inline;
+}
+header #lang_bar .menu_lang .open > .dropdown-toggle .picto_Down {
+    display: none;
+}
+header #lang_bar .menu_lang .dropdown-toggle .picto_Up {
+    display: none;
+}
+header #lang_bar .menu_lang .open > .dropdown-toggle:focus .picto_Up {
+    display: inline;
+}
+header #lang_bar .menu_lang .open > .dropdown-toggle {
+    background-color: rgb(34, 43, 50);
+    text-decoration: none;
+}
+header #lang_bar .menu_lang .dropdown-menu {
+    width: 60px;
+    min-width: 60px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: rgb(22 , 32 , 39);
+    margin-top: -1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+header #lang_bar .menu_lang .dropdown-menu .active {
+    color: rgb(101, 105, 107);
+    font-family: UbuntuLight;
+    font-size: 13.5px;
+    display: block;
+    height: 26px;
+    padding-top: 4px;
+    text-align: center;
+    background-color: rgb(20 , 29 , 35);
+}
+header #lang_bar .menu_lang .dropdown-menu li {
+    text-align: center;
+}
+header #lang_bar .menu_lang .dropdown-menu li a {
+    color: white;
+    font-family: UbuntuLight;
+    font-size: 13.5px;
+    display: block;
+    height: 26px;
+    padding-top: 4px;
+}
+header #lang_bar .menu_lang .dropdown-menu li a:hover {
+    background-color: rgb(51 , 102 , 204);
+}
+header #lang_bar[scrolled="1"] {
+    display: none;
+}
+header nav {
+    margin: auto;
+}
+header nav {
+    box-shadow: 0px 2px 5px #333333;
+    /*border-bottom: 1px solid white;*/
+    background: -moz-linear-gradient(left,  rgba(31,45,55,0.7) 0%, rgba(31,45,55,1) 50%, rgba(31,45,55,0.7) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(31,45,55,0.7)), color-stop(50%,rgba(31,45,55,1)), color-stop(100%,rgba(31,45,55,0.7)));
+    background: -webkit-linear-gradient(left,  rgba(31,45,55,0.7) 0%,rgba(31,45,55,1) 50%,rgba(31,45,55,0.7) 100%);
+    background: -o-linear-gradient(left,  rgba(31,45,55,0.7) 0%,rgba(31,45,55,1) 50%,rgba(31,45,55,0.7) 100%);
+    background: -ms-linear-gradient(left,  rgba(31,45,55,0.7) 0%,rgba(31,45,55,1) 50%,rgba(31,45,55,0.7) 100%);
+    background: linear-gradient(to right,  rgba(31,45,55,0.7) 0%,rgba(31,45,55,1) 50%,rgba(31,45,55,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31f2d37', endColorstr='#b31f2d37',GradientType=1 );
+    text-align: center;
+}
+header nav[scrolled="0"] {
+    height: 80px;
+}
+header nav[scrolled="1"] {
+    height: 69px;
+}
+header nav ul {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+}
+header nav ul li > a:first-letter
+{
+    text-transform: uppercase;
+}
+header nav ul.left,
+header nav ul.right {
+    width: 50%;
+}
+header nav[scrolled="0"] ul.left,
+header nav[scrolled="0"] ul.right {
+    height: 80px;
+}
+header nav[scrolled="1"] ul.left,
+header nav[scrolled="1"] ul.right {
+    height: 69px;
+}
+header nav[scrolled="0"] ul.right {
+    margin-top: 0px;
+}
+header nav ul.left {
+    float: left;
+    text-align: left;
+}
+header nav ul.right {
+    float: right;
+    text-align: right;
+}
+header nav ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+header nav .logo {
+    background-image: url('../img/logo/logo.png');
+    position: absolute;
+    left: 50%;
+}
+header nav .logo a {
+    display: block;
+    height: 100%;
+}
+header nav[scrolled="0"] .logo {
+    width: 304px;
+    height: 80px;
+    background-position: 0 -8px;
+    margin-left: -190px;
+    top: 0;
+}
+header nav[scrolled="1"] .logo {
+    width: 304px;
+    height: 80px;
+    background-position: 0 -15px;
+    margin-left: -190px;
+    top: 0;
+}
+header nav ul .play_button {
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 153, 51, 0.6);
+    color: #cc9933;
+    font-family: 'ElanITCStdBold';
+    font-size: 18px;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+header nav ul .play_button:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-out;
+    background: -moz-linear-gradient(top, rgba(2,1,0,0.3) 0%, rgba(70,47,0,0.39) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,0,0.3)), color-stop(100%,rgba(70,47,0,0.39)));
+    background: -webkit-linear-gradient(top, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+    background: -o-linear-gradient(top, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+    background: -ms-linear-gradient(top, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+    background: linear-gradient(to bottom, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d020100', endColorstr='#63462f00',GradientType=0 );
+}
+header nav ul .play_button:hover:after {
+    opacity: 1;
+}
+header nav ul .play_button:active {
+    background-color: rgba(0, 0, 0, 0.53);
+}
+header nav ul .play_button a {
+    color: #cc9933;
+    display: block;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+    padding-top: 11px;
+}
+header nav ul .dropdown_connection {
+    width: 250px;
+    padding: 0 25px 0 25px;
+}
+header nav[scrolled="0"] ul .dropdown_connection {
+    height: 80px;
+    padding-top: 15px;
+}
+header nav[scrolled="1"] ul .dropdown_connection {
+    height: 69px;
+    padding-top: 9px;
+}
+header nav ul .dropdown_connection.open {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(11,19,25,0.81) 77%, rgba(11,19,25,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(77%,rgba(11,19,25,0.81)), color-stop(100%,rgba(11,19,25,1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#fc0b1319',GradientType=0 );
+}
+header nav ul .dropdown_connection .dropdown-menu {
+    border-radius: 0;
+    background-color: rgb(11, 19, 25);
+    margin-top: 0;
+    box-shadow: none;
+    border: none;
+    width: 250px;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid {
+    padding: 0;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .block_login {
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .input-group,
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .form-control {
+    height: 40px;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .input-group {
+    margin-bottom: 20px;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .connection_link {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'UbuntuLight';
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .connection_link a {
+    color: white;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .connection_link a:hover {
+    opacity: 0.8;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection {
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 51, 51, 0.6);
+    color: #ff3333;
+    font-family: 'UbuntuLight';
+    font-size: 12px;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    vertical-align: middle;
+    background: transparent;
+    margin: 10px 0 20px 0;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-out;
+    background: -moz-linear-gradient(top, rgba(31,9,9,0.33) 0%, rgba(66,17,17,0.39) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,9,9,0.33)), color-stop(100%,rgba(66,17,17,0.39)));
+    background: -webkit-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    background: -o-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    background: -ms-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    background: linear-gradient(to bottom, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541f0909', endColorstr='#63421111',GradientType=0 );
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection:hover:after {
+    opacity: 1;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection:active {
+    background-color: rgba(0, 0, 0, 0.53);
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection .picto_connection {
+    font-size: 18px;
+    vertical-align: middle;
+}
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection .text,
+header nav ul .dropdown_connection .dropdown-menu .container-fluid .btn_connection .picto_connection {
+    position: relative;
+    z-index: 3;
+}
+header nav ul .dropdown_connection .dropdown-menu .title {
+    font-size: 16px;
+    font-family: 'ElanITCStdBold';
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+header nav ul .dropdown_connection .dropdown-menu .register {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(8, 15, 21);
+    text-align: center;
+}
+header nav ul .dropdown_connection .dropdown-menu .register .text {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'ElanITCStdBold';
+    color: white;
+    text-transform: uppercase;
+}
+header nav ul .dropdown_connection .dropdown-menu .register .btn_register {
+    font-family: 'UbuntuLight';
+    width: 180px;
+    height: 40px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+header nav ul .dropdown_account {
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+    height: 100%;
+    padding: 0 15px 0 15px;
+}
+header nav[scrolled="0"] ul li.dropdown_account {
+    padding-top: 20px;
+}
+header nav[scrolled="1"] ul li.dropdown_account {
+    padding-top: 14px;
+}
+header nav ul .dropdown_account.open {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(11,19,25,0.81) 77%, rgba(11,19,25,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(77%,rgba(11,19,25,0.81)), color-stop(100%,rgba(11,19,25,1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#fc0b1319',GradientType=0 );
+}
+header nav ul .dropdown_account a {
+    color: white;
+}
+header nav ul .dropdown_account .picto_Down {
+    display: inline-block;
+}
+header nav ul .dropdown_account.open .picto_Down {
+    display: none;
+}
+header nav ul .dropdown_account .picto_Up {
+    display: none;
+}
+header nav ul .dropdown_account.open .picto_Up {
+    display: inline-block;
+}
+header nav ul .dropdown_account .picto_Down,
+header nav ul .dropdown_account.open .picto_Down,
+header nav ul .dropdown_account .picto_Up,
+header nav ul .dropdown_account.open .picto_Up {
+    font-size: 12px;
+    margin-left: 5px;
+}
+header nav ul .dropdown_account .dropdown-menu {
+    border-radius: 0;
+    background-color: rgb(11, 19, 25);
+    margin-top: 0;
+    box-shadow: none;
+    border: none;
+    width: 280px;
+    right: 0;
+    left: auto;
+    padding: 0;
+}
+header nav ul .dropdown_account .dropdown-menu li {
+    display: block;
+}
+header nav ul .dropdown_account .nav_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 5px;
+}
+header nav ul .dropdown_account .account_player {
+    padding: 10px;
+    height: 60px;
+    background-color: rgb(11, 19, 25);
+}
+header nav ul .dropdown_account .account_player .player_name  {
+    font-size: 21px;
+    font-family: 'UbuntuBold';
+    color: white;
+    max-width: 225px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: -6px;
+}
+header nav ul .dropdown_account .account_player .guild_guillemet,
+header nav ul .dropdown_account .account_player .guild_name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+    padding: 0;
+    margin: -5px 0 0 0;
+}
+header nav ul .dropdown_account .account_player .guild_name {
+    max-width: 245px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+header nav ul .dropdown_account .account_player.alliance .player_guild {
+    color: #6699cc;
+}
+header nav ul .dropdown_account .account_player.horde .player_guild {
+    color: #dd6160;
+}
+header nav ul .dropdown_account .account_player .logout {
+    position: relative;
+    float: right;
+    font-size: 22px;
+    margin-top: -30px;
+}
+header nav ul .dropdown_account .account_player .logout span:hover {
+    color: #3366CC !important;
+}
+header nav ul .dropdown_account .account_links {
+    background-color: rgb(8,15,21);
+    width: 100%;
+    padding: 0;
+}
+header nav ul .dropdown_account .account_links li {
+    margin: 0;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+}
+header nav ul .dropdown_account .account_links li a {
+    display: block;
+    height: 100%;
+    padding: 12.5px;
+}
+header nav ul .dropdown_account .account_links li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+header nav ul .dropdown_account .account_links li a:active {
+    background-color: rgb(51, 102, 204);
+}
+header nav[scrolled="0"] ul li.cart_navigation {
+    padding-top: 25px;
+}
+header nav[scrolled="1"] ul li.cart_navigation {
+    padding-top: 19px;
+}
+header nav ul li.cart_navigation .cart {
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(51, 102, 204);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'UbuntuLight';
+    padding: 0 8px 0 8px;
+    float: right;
+}
+header nav ul li.cart_navigation .cart .picto_Panier,
+header nav ul li.cart_navigation .cart .text {
+    display: inline-block;
+    vertical-align: middle;
+}
+header nav ul li.cart_navigation .cart .picto_Panier {
+    font-size: 16px;
+    margin-right: 8px;
+}
+header nav ul li.cart_navigation .cart.empty {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.2);
+}
+header nav ul .connection_button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 51, 51, 0.6);
+    color: #ff3333;
+    font-family: 'UbuntuLight';
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 13px;
+    z-index: 1;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+header nav ul .connection_button:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-out;
+    background: -moz-linear-gradient(top, rgba(31,9,9,0.33) 0%, rgba(66,17,17,0.39) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,9,9,0.33)), color-stop(100%,rgba(66,17,17,0.39)));
+    background: -webkit-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    background: -o-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    background: -ms-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    background: linear-gradient(to bottom, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541f0909', endColorstr='#63421111',GradientType=0 );
+}
+header nav ul .connection_button:hover:after {
+    opacity: 1;
+}
+header nav ul .connection_button:active {
+    background-color: rgba(0, 0, 0, 0.53);
+}
+header nav ul .dropdown_connection.open .connection_button {
+    border: 1px solid rgba(154, 154, 154, 0.6);
+    color: #9A9A9A;
+    opacity: 0.7;
+}
+header nav ul .dropdown_connection.open .connection_button:after {
+    background: transparent;
+}
+header nav ul .dropdown_connection.open .connection_button:hover {
+    opacity: 0.9;
+}
+header nav ul .connection_button a {
+    color: #ff3333;
+    display: block;
+    height: 100%;
+    z-index: 3;
+    position: relative;
+}
+header nav ul .connection_button .picto_connection {
+    font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+}
+header nav ul .connection_button .text {
+    position: relative;
+    z-index: 3;
+}
+header nav ul .nav_button {
+    font-size: 16px;
+    font-family: 'UbuntuLight';
+    color: white;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 0 30px 0 30px;
+}
+header nav ul .nav_button a {
+    color: white;
+}
+header nav[scrolled="0"] ul li {
+    height: 80px;
+    padding-top: 30px;
+}
+header nav[scrolled="1"] ul li {
+    height: 69px;
+    padding-top: 24px;
+}
+header nav ul li:not(.block_play):not(.dropdown_connection):hover .nav_button {
+    opacity: 0.8;
+}
+header nav[scrolled="0"] ul li.block_play {
+    padding-top: 15px;
+}
+header nav[scrolled="1"] ul li.block_play {
+    padding-top: 9px;
+}
+header nav ul .dropdown_navigation {
+    padding: 0 25px;
+}
+header nav ul .dropdown_navigation.open {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(11,19,25,0.81) 77%, rgba(11,19,25,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(77%,rgba(11,19,25,0.81)), color-stop(100%,rgba(11,19,25,1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(11,19,25,0.81) 77%,rgba(11,19,25,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#fc0b1319',GradientType=0 );
+}
+header nav ul .dropdown_navigation .picto_Up {
+    display: none;
+}
+header nav ul .dropdown_navigation .picto_Down {
+    display: inline-block;
+}
+header nav ul .dropdown_navigation.open .picto_Down {
+    display: none;
+}
+header nav ul .dropdown_navigation.open .picto_Up {
+    display: inline-block;
+}
+header nav ul .dropdown_navigation a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+header nav ul .dropdown_navigation a:hover {
+    opacity: 0.8;
+}
+header nav ul .dropdown_navigation .dropdown-menu {
+    border: medium none;
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: rgb(11, 19, 25);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0px;
+    min-width: 100%;
+}
+header nav ul .dropdown_navigation .dropdown-menu li {
+    display: block;
+    height: auto;
+    padding: 0;
+}
+header nav ul .dropdown_navigation .dropdown-menu li a {
+    color: white;
+    font-family: UbuntuLight;
+    font-size: 13.5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+header nav ul .dropdown_navigation .dropdown-menu li a:focus,
+header nav ul .dropdown_navigation .dropdown-menu li a:hover {
+    background-color: rgb(51 , 102 , 204);
+}
+
+header nav .btn_nav_menu,
+header nav .btn_nav_connection,
+header nav .btn_nav_account {
+    display: none;
+}
+.row-offcanvas {
+    display: none;
+}
+@media screen and (max-width: 1280px) {
+    header nav[scrolled="0"] {
+        height: 70px;
+    }
+    header nav[scrolled="1"] {
+        height: 59px;
+    }
+    header nav[scrolled="0"] ul.left,
+    header nav[scrolled="0"] ul.right {
+        height: 70px;
+    }
+    header nav[scrolled="1"] ul.left,
+    header nav[scrolled="1"] ul.right {
+        height: 59px;
+    }
+    header nav[scrolled="0"] ul li {
+        height: 70px;
+        padding-top: 26px;
+    }
+    header nav[scrolled="1"] ul li {
+        height: 59px;
+        padding-top: 20px;
+    }
+    header nav[scrolled="0"] .logo {
+        width: 257px;
+        background-size: contain;
+        background-repeat:  no-repeat;
+        margin-left: -141px;
+    }
+    header nav[scrolled="1"] .logo {
+        width: 184px;
+        background-size: contain;
+        background-repeat:  no-repeat;
+        margin-left: -122px;
+    }
+    header nav ul .play_button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+    header nav ul .play_button a {
+        padding-top: 9px;
+    }
+    header nav ul .connection_button {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    header nav ul .connection_button .picto_connection {
+        font-size: 16px;
+    }
+    header nav ul .dropdown_connection {
+        width: 170px;
+        padding: 0 15px 0 15px;
+    }
+    header nav[scrolled="0"] ul .dropdown_connection {
+        height: 70px;
+        padding-top: 15px;
+    }
+    header nav[scrolled="1"] ul .dropdown_connection {
+        height: 59px;
+        padding-top: 9px;
+    }
+    header nav ul .dropdown_connection .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+    header nav ul .nav_button {
+        font-size: 12px;
+        margin: 0 15px 0 15px;
+    }
+    header nav ul .dropdown_navigation {
+        padding: 0 15px;
+    }
+    header nav ul .dropdown_navigation a {
+        font-size: 12px;
+    }
+    header nav ul .dropdown_navigation .dropdown-menu li a {
+        font-size: 13px;
+    }
+    header nav ul .dropdown_account .text {
+        display: none;
+    }
+    header nav[scrolled="0"] ul li.dropdown_account {
+        padding-top: 15px;
+    }
+    header nav[scrolled="1"] ul li.dropdown_account {
+        padding-top: 9px;
+    }
+}
+@media screen and (max-width: 960px) {
+    body.bg_offcanvas {
+        overflow: hidden;
+    }
+    header nav[scrolled="0"] .logo {
+        width: 148px;
+        height: 48px;
+        background-size: contain;
+        background-repeat:  no-repeat;
+        margin-left: -74px;
+    }
+    header nav[scrolled="1"] .logo {
+        width: 148px;
+        height: 48px;
+        background-size: contain;
+        background-repeat:  no-repeat;
+        margin-left: -74px;
+    }
+    header nav[scrolled="0"] {
+        height: 50px;
+    }
+    header nav[scrolled="1"] {
+        height: 50px;
+    }
+    header nav ul.left,
+    header nav ul.right {
+        display: none;
+    }
+    header nav .btn_nav_menu,
+    header nav .btn_nav_connection,
+    header nav .btn_nav_account {
+        display: inline;
+    }
+    header nav .reduced_menu {
+        width: 50%;
+        display: inline-block;
+    }
+    header nav .reduced_menu.left {
+        float: left;
+        text-align: left;
+        padding-top: 14px;
+    }
+    header nav .reduced_menu.right {
+        float: right;
+        text-align: right;
+        padding-top: 4px;
+    }
+    header nav[scrolled="0"] .reduced_menu.right {
+        margin-top: 0px;
+    }
+    header nav .reduced_menu .btn_nav_menu {
+        float: left;
+        background: none;
+        border: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'UbuntuLight';
+    }
+    header nav .reduced_menu .btn_nav_menu .picto_menu {
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    header nav .reduced_menu .btn_nav_menu .picto_menu.picto_Close {
+        display: none;
+    }
+    header nav .reduced_menu .btn_nav_menu.active .picto_menu.picto_Close {
+        display: inline-block;
+    }
+    header nav .reduced_menu .btn_nav_menu .picto_menu.picto_OffCanvasmenu {
+        display: inline-block;
+    }
+    header nav .reduced_menu .btn_nav_menu.active .picto_menu.picto_OffCanvasmenu {
+        display: none;
+    }
+    header nav .reduced_menu .btn_nav_menu .text {
+        vertical-align: middle;
+    }
+    header nav .reduced_menu .btn_nav_connection {
+        float: right;
+        width: 50px;
+        height: 40px;
+        background: transparent;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 51, 51, 0.6);
+        color: #ff3333;
+        font-size: 16px;
+        z-index: 1;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+    }
+    header nav .reduced_menu .btn_nav_connection:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease-out;
+        background: -moz-linear-gradient(top, rgba(31,9,9,0.33) 0%, rgba(66,17,17,0.39) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,9,9,0.33)), color-stop(100%,rgba(66,17,17,0.39)));
+        background: -webkit-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        background: -o-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        background: -ms-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        background: linear-gradient(to bottom, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541f0909', endColorstr='#63421111',GradientType=0 );
+    }
+    header nav .reduced_menu .btn_nav_connection:hover:after {
+        opacity: 1;
+    }
+    header nav .reduced_menu .btn_nav_connection:active {
+        background-color: rgba(0, 0, 0, 0.53);
+    }
+    header nav .reduced_menu .btn_nav_connection.active {
+        border: 1px solid rgba(154, 154, 154, 0.6);
+        color: #9A9A9A;
+        opacity: 0.7;
+    }
+    header nav .reduced_menu .btn_nav_connection.active:after {
+        background: transparent;
+    }
+    header nav .reduced_menu .btn_nav_connection.active:hover {
+        opacity: 0.9;
+    }
+    header nav .reduced_menu .btn_nav_connection .picto_connection {
+        z-index: 3;
+        position: relative;
+    }
+    header nav .reduced_menu .btn_nav_account {
+        background: transparent;
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+    header nav .reduced_menu .btn_nav_account .picto_account {
+        display: none;
+    }
+    header nav .reduced_menu .btn_nav_account img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+        top: 50px;
+        margin: 0;
+        display: block;
+    }
+    .row-offcanvas-right {
+        right: 0;
+    }
+    .row-offcanvas-left {
+        left: 0;
+    }
+    .row-offcanvas-right
+        .sidebar-offcanvas {
+        right: -100%; /* 6 columns */
+    }
+    .row-offcanvas-left
+        .sidebar-offcanvas {
+        left: -100%; /* 6 columns */
+    }
+    .row-offcanvas.active {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        outline: 0px none;
+        background-color: rgb(8, 15, 21);
+        display: inline-block;
+        z-index: 20000;
+    }
+    .row-offcanvas.active {
+        top: 50px;
+    }
+    .row-offcanvas .offcanvas_content {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+    .row-offcanvas.active .offcanvas_content {
+        display: block;
+        position: relative;
+        z-index: 2;
+        padding-top: 30px;
+    }
+    .row-offcanvas-account.active .offcanvas_content {
+        padding-top: 0;
+    }
+    .row-offcanvas-connection .offcanvas_content {
+        padding-bottom: 456px;
+    }
+    .row-offcanvas-menu .offcanvas_content {
+        padding-bottom: 400px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li {
+        display: block;
+        font-size: 16px;
+        font-family: 'UbuntuLight';
+        text-transform: uppercase;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li.play {
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgba(204, 153, 51, 0.6);
+        font-family: 'ElanITCStdBold';
+        font-size: 14px;
+        text-transform: uppercase;
+        z-index: 1;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 auto 18px auto;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li.play:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease-out;
+        background: -moz-linear-gradient(top, rgba(2,1,0,0.3) 0%, rgba(70,47,0,0.39) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,0,0.3)), color-stop(100%,rgba(70,47,0,0.39)));
+        background: -webkit-linear-gradient(top, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+        background: -o-linear-gradient(top, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+        background: -ms-linear-gradient(top, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+        background: linear-gradient(to bottom, rgba(2,1,0,0.3) 0%,rgba(70,47,0,0.39) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d020100', endColorstr='#63462f00',GradientType=0 );
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li.play:hover:after {
+        opacity: 1;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li.play:active {
+        background-color: rgba(0, 0, 0, 0.53);
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li.play a {
+        color: #cc9933;
+        display: block;
+        height: 100%;
+        padding-top: 9px;
+        position: relative;
+        z-index: 3;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li a {
+        color: white;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation li:not(.play) a:hover {
+        opacity: 0.8;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer {
+        height: 160px;
+        text-align: left;
+        background-color: rgb(11, 19, 25);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .footer_logo {
+        padding-top: 25px;
+        width: 640px;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .picto_Firestorm {
+        font-size: 31px;
+        margin-right: -6px;
+        float: left;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .text_logo {
+        font-family: 'ElanITCStdBold';
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-top: -1px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links {
+        margin: auto;
+        width: 960px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .left_links {
+        float: left;
+        width: 30%;
+        padding-top: 0px;
+        float: left;
+        text-align: left;
+        display: block;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .left_links a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 24px;
+    }
+
+    .row-offcanvas .offcanvas_content .offcanvas_footer .footer_twitter   { border-color: #53A8E8 !important; }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .footer_facebook {
+        border-color: #3D5998 !important;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .footer_youtube   { border-color: #CD2022 !important; }
+
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .right_links {
+        position:relative;
+        text-align: center;
+        width: 50%;
+        margin-left: 20%;
+        margin-top: -20px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .right_links a{
+        color: white;
+        margin-left: 10px;
+        font-family: UbuntuLight;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 0px;
+    }
+    .row-offcanvas-connection .offcanvas_content .title {
+        font-size: 16px;
+        font-family: "ElanITCStdBold";
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .row-offcanvas-connection .offcanvas_content form {
+        text-align: center;
+    }
+    .row-offcanvas-connection .offcanvas_content .input-group {
+        width: 50%;
+        margin: 0 auto 20px auto;
+    }
+    .row-offcanvas-connection .offcanvas_content .input-group,
+    .row-offcanvas-connection .offcanvas_content .form-control {
+        height: 40px;
+    }
+    .row-offcanvas-connection .offcanvas_content .connection_link {
+        text-align: center;
+        font-size: 12px;
+        font-family: "UbuntuLight";
+        color: #FFF;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .row-offcanvas-connection .offcanvas_content .connection_link:hover {
+        opacity: 0.8;
+    }
+    .row-offcanvas-connection .offcanvas_content .connection_link a {
+        color: white;
+    }
+    .row-offcanvas-connection .offcanvas_content .btn_connection {
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 51, 51, 0.6);
+        color: #F33;
+        font-family: "UbuntuLight";
+        font-size: 12px;
+        text-transform: uppercase;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        background: transparent none repeat scroll 0% 0%;
+        margin: 10px 0px 20px;
+    }
+    .row-offcanvas-connection .offcanvas_content .btn_connection:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease-out;
+        background: -moz-linear-gradient(top, rgba(31,9,9,0.33) 0%, rgba(66,17,17,0.39) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,9,9,0.33)), color-stop(100%,rgba(66,17,17,0.39)));
+        background: -webkit-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        background: -o-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        background: -ms-linear-gradient(top, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        background: linear-gradient(to bottom, rgba(31,9,9,0.33) 0%,rgba(66,17,17,0.39) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541f0909', endColorstr='#63421111',GradientType=0 );
+    }
+    .row-offcanvas-connection .offcanvas_content .btn_connection:hover:after {
+        opacity: 1;
+    }
+    .row-offcanvas-connection .offcanvas_content .btn_connection:active {
+        background-color: rgba(0, 0, 0, 0.53);
+    }
+    .row-offcanvas-connection .offcanvas_content .btn_connection .picto_connection {
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    .row-offcanvas-connection .offcanvas_content .btn_connection .picto_connection,
+    .row-offcanvas-connection .offcanvas_content .btn_connection .text {
+        position: relative;
+        z-index: 3;
+    }
+    .row-offcanvas-connection .offcanvas_content .register {
+        background-color: rgb(11, 19, 25);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 175px;
+    }
+    .row-offcanvas-connection .offcanvas_content .register .text {
+        text-align: center;
+        font-size: 13px;
+        font-family: "ElanITCStdBold";
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 30px;
+    }
+    .row-offcanvas-connection .offcanvas_content .register .btn_register {
+        font-family: "UbuntuLight";
+        width: 180px;
+        height: 40px;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    .row-offcanvas-account .offcanvas_content {
+        padding-top: 0;
+    }
+    .row-offcanvas-account .offcanvas_content .profile {
+        height: 60px;
+        background-color: rgb(11, 19, 25);
+        text-align: left;
+        padding-top: 9px;
+    }
+    .row-offcanvas-account .offcanvas_content .profile .player_name  {
+        font-size: 21px;
+        font-family: 'UbuntuBold';
+        color: white;
+        max-width: 225px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: -6px;
+    }
+    .row-offcanvas-account .offcanvas_content .profile .guild_guillemet,
+    .row-offcanvas-account .offcanvas_content .profile .guild_name {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        font-family: 'UbuntuLight';
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+    .row-offcanvas-account .offcanvas_content .profile .guild_name {
+        max-width: 245px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .row-offcanvas-account .offcanvas_content .profile.alliance .player_guild {
+        color: #6699cc;
+    }
+    .row-offcanvas-account .offcanvas_content .profile.horde .player_guild {
+        color: #dd6160;
+    }
+    .row-offcanvas-account .offcanvas_content .profile .logout {
+        position: relative;
+        float: right;
+        font-size: 22px;
+        margin-top: -30px;
+    }
+    .row-offcanvas-account .offcanvas_content .profile .logout a {
+        color: white;
+    }
+    .row-offcanvas-account .offcanvas_content .offcanvas_links {
+        background-color: rgb(8,15,21);
+        width: 100%;
+        padding: 0;
+    }
+    .row-offcanvas-account .offcanvas_content .offcanvas_links li {
+        margin: 0;
+        height: auto;
+        text-align: center;
+        padding: 0;
+        font-size: 16px;
+        font-family: 'UbuntuLight';
+        display: block;
+        text-transform: uppercase;
+    }
+    .row-offcanvas-account .offcanvas_content .offcanvas_links li a {
+        display: block;
+        height: 100%;
+        padding: 12.5px;
+        color: white;
+    }
+    .row-offcanvas-account .offcanvas_content .offcanvas_links li a:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    .row-offcanvas-account .offcanvas_content .offcanvas_links li a:active {
+        background-color: rgb(51, 102, 204);
+    }
+}
+@media screen and (max-width: 640px) {
+    header nav[scrolled="1"] {
+        height: 40px;
+    }
+    header nav[scrolled="0"] .logo {
+        width: 172px;
+        height: 82px;
+        background-size: contain;
+        background-repeat:  no-repeat;
+        margin-left: -86px;
+        top: 1px;
+    }
+    header nav[scrolled="1"] .logo {
+        width: 116px;
+        height: 38px;
+        background-size: contain;
+        background-repeat:  no-repeat;
+        margin-left: -58px;
+    }
+    header nav[scrolled="0"] .reduced_menu.right {
+        padding-top: 15px;
+    }
+    header nav[scrolled="1"] .reduced_menu.left,
+    header nav[scrolled="1"] .reduced_menu.right {
+        padding-top: 10px;
+    }
+    .row-offcanvas.active {
+        top: 40px;
+    }
+    header nav .reduced_menu .btn_nav_menu .text {
+        display: none;
+    }
+    header nav .reduced_menu .btn_nav_connection {
+        color: white;
+        border: none;
+        width: auto;
+        height: auto;
+    }
+    header nav .reduced_menu .btn_nav_connection:after {
+        background: transparent;
+    }
+    header nav .reduced_menu .btn_nav_connection:active {
+        background: transparent;
+    }
+    header nav .reduced_menu .btn_nav_connection:hover {
+        opacity: 0.8;
+    }
+    header nav .reduced_menu .btn_nav_connection.active {
+        color: white;
+        border: none;
+        opacity: 1;
+    }
+    header nav .reduced_menu .btn_nav_account .picto_account {
+        display: inline-block;
+    }
+    header nav .reduced_menu .btn_nav_account {
+        width: auto;
+        height: auto;
+    }
+    header nav .reduced_menu .btn_nav_account img {
+        display: none;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation {
+        text-align: center;
+        left: 0px;
+        position: absolute;
+        width: calc(100% - 10px);
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_navigation .play {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row-offcanvas-menu .offcanvas_content {
+        padding-bottom: 575px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer {
+        padding-bottom: 20px;
+        height: auto;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .footer_logo {
+        display: none;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links {
+        width: 320px;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .left_links {
+        padding-top: 40px;
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .right_links {
+        margin-top: 25px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .row-offcanvas .offcanvas_content .offcanvas_footer .links .right_links  a {
+        display: block;
+        margin-top: 15px;
+    }
+}

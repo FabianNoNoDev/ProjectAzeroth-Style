@@ -1,0 +1,238 @@
+#charSheet { }
+#charSheet .headerSeg { height:453px; width:820px; display:block; position:relative; background:url('http://bloodsource.hu/images/karacsonywelcome.jpg') no-repeat; }
+#charSheet .headerSeg .allianceBg { height:106px; width:820px; background:url('http://bloodsource.hu/images/armory/profileHeaderalliance.jpg') no-repeat; }
+#charSheet .headerSeg .hordeBg { height:106px; width:820px; background:url('http://bloodsource.hu/images/armory/profileHeaderhorde.jpg') no-repeat; }
+#charSheet .headerSeg .christmas{ position:relative; left:430px; top:305px; width:150px; z-index:1; background:url('http://bloodsource.hu/images/christmasbt.png') -0px -0px no-repeat;  }
+#charSheet .headerSeg .christmas:hover { background:url('http://bloodsource.hu/images/christmasbt.png') -0px -25px no-repeat; }
+#charSheet .headerSeg .charPortrait { padding-left:10px; width:100px; float:left; }
+#charSheet .headerSeg .charPortraitImg { position:relative; left:12px; top:17px; z-index:1; }
+#charSheet .headerSeg .hordecharProtraitLvl { position:relative; left:13px; top:-15px; z-index:2; background:url('http://bloodsource.hu/images/armory/lvlbg_horde.png') no-repeat; }
+#charSheet .headerSeg .alliancecharProtraitLvl { position:relative; left:13px; top:-15px; z-index:2; background:url('http://bloodsource.hu/images/armory/lvlbg_alliance.png') no-repeat; }
+#charSheet .headerSeg .charLevel {position:relative; top:5px; left:4px; color:#FFF; font-weight:bold; font-size:20px; }
+#charSheet .headerSeg .charInformation { width:710px; float:left; }
+#charSheet .headerSeg .charGuildName{ position: absolute; margin-top:28px; margin-left:5px; }
+#charSheet .headerSeg .charGuildName a { color:#FFD200; font-size: 20px; line-height: 21px; display: block; font-family: Georgia, Times New Roman, Times, serif; letter-spacing: -1px; font-weight:bold; }
+#charSheet .headerSeg .charGuildName a:hover{ color:#FFF; }
+#charSheet .headerSeg .charName { position:relative; left:5px; top:20px; color:#FFFFFF; font-size:26px; font-weight:bold; }
+#charSheet .headerSeg .charNamePrefix { position:absolute; font-size:15px; font-weight:normal; margin-top:9px; margin-left:5px; color:#FFFFFF;}
+#charSheet .headerSeg .charNameSuffix { font-size:15px; font-weight:normal; color:#FFFFFF; }
+#charSheet .headerSeg .charRealmName { position:absolute; margin-left:420px; color:#FFD200; font-size:13px; font-weight:bold; width:250px; text-align:right; }
+#charSheet .headerSeg .charTimePlayed { position:absolute; margin-left:470px; top:18px; color:#FFD200; font-size:11px; width:200px; text-align:right; }
+#charSheet .headerSeg .charLastSeen { position:absolute; margin-left:470px; top:5px; color:#FFD200; font-size:11px; width:200px; text-align:right; }
+#charSheet .headerSeg .charAchievementPoints { position:absolute; margin-left:600px; margin-top:29px; display:block; color: #FFFFFF; font-weight: bold; font-size:22px; text-align:right; width:50px; }
+
+#charPage { }
+#charPageBg { float:left; width:885px; background:url('http://bloodsource.hu/images/armory/bg1.gif') repeat; height:100%; border:3px solid #333; }
+
+#charSheet .leftPane { background:url('http://bloodsource.hu/images/armory/leftPane.jpg') no-repeat; height:847px; width:519px; position:relative; float:left; }
+#charSheet .leftPane .contentButtons { position:relative; top:25px; left:120px; width:300px; }
+#charSheet .leftPane .contentBtn { width:94px; height:26px; display:block; cursor:pointer; float:left; }
+#charSheet .leftPane .statBtn { height:26px; background:url('http://bloodsource.hu/images/armory/statBtn.png') no-repeat; }
+#charSheet .leftPane .modelBtn { height:26px; background:url('http://bloodsource.hu/images/armory/modelBtn.png') no-repeat; }
+#charSheet .leftPane .gearBtn { height:26px; background:url('http://bloodsource.hu/images/armory/gearBtn.png') no-repeat; }
+#charSheet .leftPane .statBtn:hover, #charSheet .leftPane .modelBtn:hover, #charSheet .leftPane .gearBtn:hover { background-position: 0 -26px; }
+#charSheet .leftPane .statBtnA, #charSheet .leftPane .modelBtnA, #charSheet .leftPane .gearBtnA { background-position: 0 -26px; }
+#charSheet .leftPane .centerBlock { position:absolute; height:427px; width:305px; top:70px; left:107px;}
+#charSheet .leftPane .centerBlock .livelyHood { margin:30px 30px; height:215px; width:200px; display:block; }
+#charSheet .leftPane .statsBlock { width:275px; margin:0 20px; }
+#charSheet .leftPane .statsLeft { float:left; }
+#charSheet .leftPane .statsLeft .baseHeader { background:url('http://bloodsource.hu/images/armory/baseStats.png') no-repeat; height:24px; width:130px; }
+#charSheet .leftPane .statsLeft .baseHeader p { padding:5px 5px; color:#000000; margin:0; }
+#charSheet .leftPane .statsLeft .baseStats{ width:130px; }
+#charSheet .leftPane .statsRight { float:right; }
+#charSheet .leftPane .statsRight .modHeader { background:url('http://bloodsource.hu/images/armory/modStats.png') no-repeat; height:24px; width:130px; position:relative; }
+#charSheet .leftPane .statsRight .modHeader p { padding:5px 5px; color:#000000; margin:0; }
+#charSheet .leftPane .statsRight .modHeader .statRotator_l { position:absolute; left:83px; top:0px; width:24px; height:24px; display:block; background:url('http://bloodsource.hu//images/character/statRotator.png') no-repeat; cursor:pointer; background-position: 0 -48px;  }
+#charSheet .leftPane .statsRight .modHeader .statRotator_l:hover { background-position: 0 -24px; }
+#charSheet .leftPane .statsRight .modHeader .statRotator_r { position:absolute; left:107px; top:0px; width:24px; height:24px; display:block; background:url('http://bloodsource.hu//images/character/statRotator.png') no-repeat; cursor:pointer; }
+#charSheet .leftPane .statsRight .modHeader .statRotator_r:hover { background-position: 0 -72px; }
+#charSheet .leftPane .statsRight .modStats { width:130px; }
+#charSheet .leftPane .arenaStats { position:absolute; top:670px; left:53px; width:410px; height:120px; }
+#charSheet .leftPane .arenaStats .teamInfoBox { height:65px; width:110px; float:left; text-align:center; position:relative; line-height:20px; top:60px; }
+#charSheet .leftPane .arenaStats .teamInfoBox.twoTeam { left:4px; }
+#charSheet .leftPane .arenaStats .teamInfoBox.threeTeam { left:42px; }
+#charSheet .leftPane .arenaStats .teamInfoBox.fiveTeam { left:80px; }
+#charSheet .leftPane .arenaStats .teamInfoBox .teamInfo { font-weight:bold; font-size:15px; color:#000; cursor:pointer; }
+#charSheet .leftPane .arenaStats .teamInfoBox .teamInfo:hover { color:#333; }
+#charSheet .leftPane .arenaStats .teamInfoBox .teamRank { margin-left:-7px; z-index:4; }
+
+/*******************/
+/* (s) Right Panel */
+/*******************/
+#charSheet .rightPane { background:url('http://bloodsource.hu/images/armory/sidepart.jpg') no-repeat; height:847px; width:299px; position:relative; float:right; }
+#charSheet .rightPane .divider { padding:0 5px; width:249px; height:2px; display:block; background:url('http://bloodsource.hu//images/divider.jpg') no-repeat; }
+#charSheet .rightPane .charInfo { margin:30px 17px; color:#333; text-align:left; width:247px; }
+#charSheet .rightPane .secTitle { padding-left:18px; font-size:14px; font-weight:bold; color:#333; }
+#charSheet .rightPane .secBg { margin:30px 0; height:80px; width:267px; }
+#charSheet .rightPane .innerTitle { font-weight:bold; font-size:14px; color:#000; font-variant:small-caps; }
+/*TALENT SECTION*/
+#charSheet .rightPane .talentSection .talentBg { width:163px; background:url('http://bloodsource.hu/images/armory/talentBackground.png') no-repeat; cursor:pointer; position:relative; left:10px; float:left; text-align:right; }
+#charSheet .rightPane .talentSection .talentBg img { position:absolute; top:13px; left:17px; }
+#charSheet .rightPane .talentSection .talentBg .specName { position:absolute; top:10px; left:37px; width:90px; font-weight:bold; font-size:14px; color:#000; font-variant:small-caps; }
+#charSheet .rightPane .talentSection .talentBg .specPts { position:absolute; top:25px; left:27px; width:90px; color:#666; font-size:13px; }
+#charSheet .rightPane .talentSection ._active { height:55px; background-position: 0 -220px; }
+#charSheet .rightPane .talentSection ._active:hover { background-position: 0 -165px; }
+#charSheet .rightPane .talentSection ._inactive { height:55px; background-position: 0 -55px; }
+#charSheet .rightPane .talentSection ._inactive:hover { background-position: 0 0; }
+#charSheet .rightPane .talentSection ._nospec { height:55px; background-position: 0 -110px; }
+/*PVP SECTION*/
+#charSheet .rightPane .pvpSection { height:110px; }
+#charSheet .rightPane .pvpSection .pvpBg { height:44px; width:264px; background:url('http://bloodsource.hu/images/armory/pvpbg.jpg') no-repeat; position:relative; left:10px; float:left; text-align:left;  }
+#charSheet .rightPane .pvpSection img { position:absolute; left:10px; top:5px; }
+#charSheet .rightPane .pvpSection .pvpTitle { position:absolute; left:50px; top:3px; }
+#charSheet .rightPane .pvpSection .pvpTitleAlt{ position:absolute; left:155px; top:3px; }
+#charSheet .rightPane .pvpSection .pvpValue { position:absolute; left:70px; top:24px; font-size:14px; color:#666;  }
+#charSheet .rightPane .pvpSection .pvpValueAlt{ position:absolute; left:175px; top:24px; font-size:14px; color:#666;  }
+/*PROF SECTION*/
+#charSheet .rightPane .profSection .profBg { height:44px; width:322px; background:url('http://bloodsource.hu/images/armory/profbg.jpg') no-repeat; position:relative; left:10px; float:left; text-align:left;  }
+#charSheet .rightPane .profSection .profImg { position:absolute; left:20px; top:10px; }
+#charSheet .rightPane .profSection .profImgAlt { position:absolute; left:170px; top:10px; }
+#charSheet .rightPane .profSection .profTitle { text-align:right; width:90px; position:absolute; left:55px; top:6px; }
+#charSheet .rightPane .profSection .profTitleAlt { text-align:right; width:90px; position:absolute; left:198px; top:6px; }
+#charSheet .rightPane .profSection .profValue { text-align:right; width:90px; position:absolute; left:48px; top:23px; color:#666; }
+#charSheet .rightPane .profSection .profValueAlt { text-align:right; width:90px; position:absolute; left:191px; top:23px; color:#666; }
+/*RECENT ACTIVITY*/
+#charSheet .rightPane .recentAct { height:400px; margin:30px 0; width:340px; }
+#charSheet .rightPane .recentAct .actBlock { width:267px; height:48px; position:relative; left:10px; }
+#charSheet .rightPane .recentAct .divider { margin:0 28px; }
+#charSheet .rightPane .recentAct .icon { position:absolute; left:4px; top:35px; background:url('http://bloodsource.hu/images/armory/actIcon.png') no-repeat; height:24px; width:23px; display:block; }
+#charSheet .rightPane .recentAct .text { position:absolute; left:30px; top:30px; color:#000; width:300px; }
+#charSheet .rightPane .recentAct .name { font-size:12px; font-weight:bold; color:#06C; }
+#charSheet .rightPane .recentAct .name:hover { color:#09C; cursor:pointer; }
+#charSheet .rightPane .recentAct .time { color:#000; font-size:11px; }
+#charSheet .rightPane .recentAct .spacer { position:absolute; top:68px; left:-25px; }
+/*******************/
+/* (e) Right Panel */
+/*******************/
+
+
+/* Item Placements */
+#charSheet .itemBlk { height: 55px; width: 60px; margin: 1px 0 1px 0; position: relative; background-position: 100% 4px; background-repeat:no-repeat;}
+#charSheet .itemBlk a { width: 75px; height: 60px; display: block; padding: 4px 0 0 0; position: relative; margin: 0 0 0 5px; } 
+#charSheet .itemBlk .noItem:hover { background:url('http://bloodsource.hu//images/iconhover.gif') no-repeat 11px 0 !important; }
+#charSheet .itemLeft { position: absolute; left:24px; top:58px; }
+#charSheet .itemLeft .itemBlk a.gearFrm { background:url('http://bloodsource.hu//images/iconhover.gif') no-repeat -75px -1px;  }
+#charSheet .itemLeft .itemBlk a.gearFrm:hover { background-position: -3px 0px; }
+#charSheet .itemRight { position:absolute; left:433px; top:58px;}
+#charSheet .itemRight .itemBlk a.gearFrm { background:url('http://bloodsource.hu//images/iconhover.gif') no-repeat -75px -1px;  }
+#charSheet .itemRight .itemBlk a.gearFrm:hover { background-position: -3px 0;  }
+#charSheet .itemBot { position:absolute; left:172px; top:517px; z-index:3; }
+#charSheet .itemBot .itemBlk { float: left; display: block; width: 55px; height: 60px; }
+#charSheet .itemBot .itemBlk a.gearFrm { background:url('http://bloodsource.hu//images/iconhover.gif') no-repeat -75px; margin:0; }
+#charSheet .itemBot .itemBlk a.gearFrm:hover { width:56px; background-position: -3px 0;  }
+/* Item Quality */
+#charSheet .iQualityg { display:block; height:100%; width:100%; background-repeat:no-repeat; background-position:8px 4px; }
+#charSheet .iQuality5 { background-image:url('http://bloodsource.hu/images/armory/quality5.png'); } 
+#charSheet .iQuality4 { background-image:url('http://bloodsource.hu/images/armory/quality4.png'); } 
+#charSheet .iQuality3 { background-image:url('http://bloodsource.hu/images/armory/quality3.png'); } 
+#charSheet .iQuality2 { background-image:url('http://bloodsource.hu/images/armory/quality2.png'); }
+#charSheet .iQuality1 { background-image:url('http://bloodsource.hu/images/armory/quality1.png'); } 
+#charSheet .iQuality0 { background-image:url('http://bloodsource.hu/images/armory/quality0.gif'); }
+#charSheet .iQuality { background-image:url('http://bloodsource.hu/images/armory/quality0.gif'); } 
+#charSheet .itemBot .iQualityg { background-position:3px 4px; }
+
+
+
+
+
+/* Profile Sheet */
+
+
+#stat_invisible { display:none; visibility:hidden; } /* Disable Stats */
+
+
+
+/* ACHIEVEMENT PAGE */
+.achievements { padding-left:19px; font-family:Calibri, Trebuchet MS, Arial; clear:both; color:#000000;}
+.achievements .selected {  }
+.achievements .criteria { display:none; text-align:left; padding:0; }
+.achievements .categoryRoot .selected ul, .achievements .selected .criteria { display:block }
+.achievements .categoryRoot ul { display:none }
+
+.achievementsLeftNav { background:url('http://bloodsource.hu//images/character/achievements/achvLeftNavBg.jpg') repeat-y; width:174px; float:left; }
+.achievements .achievementsLeftNav a { display:block; padding-left:24px; text-decoration:none !important; color:#000; font-weight:bold; line-height:22px; }
+.achievementsLeftNav a:hover { background:url('http://bloodsource.hu//images/character/achievements/h_select_bg.jpg') right repeat-y; background-color:#FFFFFf; }
+.achievementsLeftNav .selected a { background:url('http://bloodsource.hu//images/character/achievements/achvLeftNavSelect.gif') right no-repeat; color:#CCC; }
+
+.statName { color:#000000; font-size:15px; }
+.achievementsLeftNav .selected { background:url('http://bloodsource.hu//images/character/achievements/achv_select_sub.jpg') right repeat-y;  }
+.achievementsLeftNav .selected .cat_list { background:url('http://bloodsource.hu//images/character/achievements/achv_select_sub_btm.jpg') bottom right no-repeat; padding:5px 0 7px 0; }
+.achievementsLeftNav .selected .cat_list div { padding:1px 0; }
+.achievementsLeftNav .selected div a { background:none; color:#999; zoom:1; }
+.achievementsLeftNav .selected div a:hover { color:white; }
+.achievementsLeftNav .selected .selected { background:url('http://bloodsource.hu//images/character/achievements/achv_sub_selected_bdr.gif') right repeat-y;  }
+.achievementsLeftNav .selected .selected a { background:url('http://bloodsource.hu//images/character/achievements/achv_sub_selected.gif') right repeat-y;  }
+.achievementsLeftNav .cat_list { padding:0; margin:0; padding-left:8px; }
+.achievementsLeftNav .nav-subcat { display:none }
+.achievementsLeftNav .selected .nav-subcat { display:block }
+
+.achievementsRight{ width:678px; float:left;}
+.achievementsRight .topcurve { line-height:0; }
+.achievementsContainer { background:url('http://bloodsource.hu//images/character/achievements/achvRightBg.jpg') repeat-y; width:673px; }
+#achievementsContent { padding:0px 0px 15px; }
+.achv_r_btm { position:absolute; }
+
+.achievement {background:url('http://bloodsource.hu//images/character/achievements/achievement_bg.jpg') 0 bottom repeat-y; position:relative; font:12px Georgia; color:#4e3c34; color:black;  padding-bottom:22px; border-top:1px solid #000; width:673px; cursor:pointer;}
+.achievement.selected {background-image:url('http://bloodsource.hu//images/character/achievements/achievement_bg_sel.jpg');}
+.achievement.locked {background-image:url('http://bloodsource.hu//images/character/achievements/achievement_bg_locked.jpg'); border-color:#000;}
+.locked.selected {background-image:url('http://bloodsource.hu//images/character/achievements/achievement_bg_locked_sel.jpg');}  
+.firsts_icon { margin-top:2px; left:0; }
+.achievement.locked .firsts_icon, .locked .pointshield, .locked .achv_reward_bg {-moz-opacity:.60; opacity:.60; -khtml-opacity:0.60 }
+.achv_title, .achv_desc, .achv_date, .achv_reward_bg, .pointshield { text-align:center; }
+.pointshield { position: absolute; right:12px; top:5px; background:url('http://bloodsource.hu//images/character/achievements/point_shield.png'); width:68px; height:61px; font:22px Georgia; color:white;}
+.locked .pointshield { color:#9e977a; }
+.pointshield div { padding-top:15px; text-shadow:1px 0 2px black, 1px 1px 2px black, -1px -1px 2px black, -1px -1px 2px black; }
+.achv_title { font-size:16px; font-weight:bold; padding:17px 0 3px 0;  }
+.locked .achv_title { color:#d8d6bb }
+.locked.selected .achv_title { color:black; }
+.achv_desc { width:486px; margin:0 auto; color:#333; }
+.locked .achv_desc { color:#C0BB9D; }
+.locked.selected .achv_desc { color:black; }
+.achv_date	{ font-size:11px; position:relative; font-weight:bold; font-family:arial; margin-top:5px; }
+.achv_reward_bg { background:url('http://bloodsource.hu//images/character/achievements/title_bg.png') 50% bottom no-repeat; color:white; height:18px; position:absolute; margin-top:5px;  width:678px; left:0;}
+
+.criteriaList li { list-style-type:none; background:url('http://bloodsource.hu//images/character/achievements/li_dash.gif') 0 6px no-repeat; padding-left:10px; }
+.criteriaListColumn { width:44%; float:right; margin-right:20px; }
+.criteriaBar { padding-top:10px; clear:both; }
+ul.criteria { margin:0; margin-top:20px; }
+.criteriaList li.criteriaDone { font-weight:bold; color:#06C; }
+.locked .criteriaList li.criteriaDone { color:#06C; }
+.criteria.criteriaList { padding:10px 0 10px 11%; margin:20px 0 0 0; overflow:hidden; }
+
+.progressBar, .noProgress { position:relative; background:url('http://bloodsource.hu//images/character/achievements/progress_bg.jpg') repeat-x; padding:3px 0; width:90%; margin:0px auto 6px; }
+.locked .progressBar { background-image:url('http://bloodsource.hu//images/character/achievements/progress_bg_locked.jpg'); }
+.progressBarCap, .progressBarCapR { background:url('http://bloodsource.hu//images/character/achievements/progress_cap.jpg') no-repeat; width:6px; float:left; position:absolute; top:0; left:-6px; display:block; height:20px }
+.progressBarCapR { background-image:url('http://bloodsource.hu//images/character/achievements/progress_cap_r.jpg'); left:auto; float:right; right:-6px; }
+.locked .progressBarCap { background-image:url('http://bloodsource.hu//images/character/achievements/progress_cap_lck.jpg');  }
+.locked .progressBarCapR { background-image:url('http://bloodsource.hu//images/character/achievements/progress_cap_lck_r.jpg');  }
+.progressInt, .noProgress { color:white; position:relative;   }
+.progressIntText { position:relative; font:bold 11px Arial; text-align:center; cursor:default; text-shadow:0 0 1px #281901, 0 0 1px #281901, 0 0 1px #281901, 0 0 1px #281901; }
+.progressIntText img { vertical-align:text-top; }
+.progressFill { position:absolute; top:-1px; left:0; background:url('http://bloodsource.hu//images/character/achievements/progress_grey.jpg') repeat-x; height:26px; }
+.grey .progressFill { background-image:url('http://bloodsource.hu//images/character/achievements/progress_grey.gif'); top:auto; }
+.grey .progressBarCap, .grey .progressBarCapR { display:none; }
+.progressBar.grey, .noProgress { background:#000; padding:0; margin:0 auto; border:1px solid #333; }
+.noProgress { text-align:center; }
+.locked .progressInt { color:#dcd9d9;  }
+.progressBar.grey:hover { border-color:#FDEAAF; }
+.grey .progressIntText { text-shadow:0 0 1px #000, 0 0 1px #000, 0 0 1px #000; }
+
+.loading { width:100%; text-align:center; font-weight:bold;  }
+
+.summaryProgressContainer { padding:10px 0 12px 32px; font-weight:bold; }
+.summaryProgress { float:left; width:32%; display:block; padding:0; padding-top:8px; line-height:normal; }
+.summaryProgress .progessBar, .summary_progress { margin-left:0; width:94%; } 
+.recent_header { font-weight:bold; padding:0 0 5px 10px; clear:both;  } 
+.noProgress { background:#333; font-weight:bold; } 
+
+.firsts_icon { background:50% no-repeat; width:72px; height:72px; position:absolute; margin:2px 0 0 8px; left:auto; }
+.firsts_icon_block { width:1px; height:70px; float:left; }
+/* ACHIEVEMENT PAGE */
+
+
+/* Statistics */
+.statRow { height:28px; padding:4px 15px; font-weight:bold; color:#FFF; text-align:left; }
+.statRow img { vertical-align:middle}
+.statRow td, .categoryHead { padding:4px 10px; }
+.statValue { width:91px; font-size:13px; font-weight:bold; }
+.categoryHead { background:url('http://bloodsource.hu//images/character/statistics/header.jpg') repeat-y; color:#FFD200; font-weight:bold; font-size:110%; padding-left:7px; text-align:left; }

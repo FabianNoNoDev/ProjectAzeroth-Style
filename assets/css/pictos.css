@@ -1,0 +1,254 @@
+@font-face {
+	font-family: 'pictos';
+	src:url('../fonts/pictos8ecf.eot?s2wueh');
+	src:url('../fonts/pictosd41d.eot?#iefixs2wueh') format('embedded-opentype'),
+		url('../fonts/pictos8ecf.ttf?s2wueh') format('truetype'),
+		url('../fonts/pictos8ecf.woff?s2wueh') format('woff'),
+		url('../fonts/pictos8ecf.svg?s2wueh#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="picto_"], [class*=" picto_"] {
+	font-family: 'pictos';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.picto_Ancienscomptes:before {
+	content: "\e800";
+}
+.picto_LogOut:before {
+	content: "\e600";
+}
+.picto_About:before {
+	content: "\e601";
+}
+.picto_Aide:before {
+	content: "\e602";
+}
+.picto_Bloquer:before {
+	content: "\e603";
+}
+.picto_Close:before {
+	content: "\e604";
+}
+.picto_Compte-Personnage:before {
+	content: "\e605";
+}
+.picto_Delete:before {
+	content: "\e606";
+}
+.picto_Down:before {
+	content: "\e607";
+}
+.picto_Dragndrop-Shortlink:before {
+	content: "\e608";
+}
+.picto_Firestorm:before {
+	content: "\e609";
+}
+.picto_Folder:before {
+	content: "\e60a";
+}
+.picto_Friends:before {
+	content: "\e60b";
+}
+.picto_Fullscreen:before {
+	content: "\e60c";
+}
+.picto_Guide:before {
+	content: "\e60d";
+}
+.picto_Home:before {
+	content: "\e60e";
+}
+.picto_Less:before {
+	content: "\e60f";
+}
+.picto_Mail:before {
+	content: "\e610";
+}
+.picto_Minimizewindow:before {
+	content: "\e611";
+}
+.picto_More:before {
+	content: "\e612";
+}
+.picto_Motdepasse:before {
+	content: "\e613";
+}
+.picto_Next:before {
+	content: "\e614";
+}
+.picto_Pause:before {
+	content: "\e615";
+}
+.picto_Play:before {
+	content: "\e616";
+}
+.picto_Previous:before {
+	content: "\e617";
+}
+.picto_Quit:before {
+	content: "\e618";
+}
+.picto_Rechercher:before {
+	content: "\e619";
+}
+.picto_Refresh:before {
+	content: "\e61a";
+}
+.picto_Repair:before {
+	content: "\e61b";
+}
+.picto_Settings:before {
+	content: "\e61c";
+}
+.picto_Sortir:before {
+	content: "\e61d";
+}
+.picto_Up:before {
+	content: "\e61e";
+}
+.picto_Update:before {
+	content: "\e61f";
+}
+.picto_Add-on:before {
+	content: "\e620";
+}
+.picto_Aide:before {
+	content: "\e621";
+}
+.picto_Armurerie:before {
+	content: "\e623";
+}
+.picto_Change:before {
+	content: "\e624";
+}
+.picto_Classement:before {
+	content: "\e625";
+}
+.picto_Close:before {
+	content: "\e626";
+}
+.picto_Comments:before {
+	content: "\e627";
+}
+.picto_Compte-Personnage:before {
+	content: "\e628";
+}
+.picto_Countdown:before {
+	content: "\e629";
+}
+.picto_Delete:before {
+	content: "\e62a";
+}
+.picto_Dotlist:before {
+	content: "\e62b";
+}
+.picto_Down:before {
+	content: "\e62c";
+}
+.picto_Download:before {
+	content: "\e62d";
+}
+.picto_Edit-22:before {
+	content: "\e62e";
+}
+.picto_Edit-23:before {
+	content: "\e62f";
+}
+.picto_Facebook:before {
+	content: "\e630";
+}
+.picto_Firestorm:before {
+	content: "\e631";
+}
+.picto_Joueurs:before {
+	content: "\e633";
+}
+.picto_Less:before {
+	content: "\e634";
+}
+.picto_Mail:before {
+	content: "\e635";
+}
+.picto_More:before {
+	content: "\e636";
+}
+.picto_Motdepasse:before {
+	content: "\e637";
+}
+.picto_Next:before {
+	content: "\e638";
+}
+.picto_Note:before {
+	content: "\e639";
+}
+.picto_OffCanvasmenu:before {
+	content: "\e63a";
+}
+.picto_Panier:before {
+	content: "\e63b";
+}
+.picto_Play:before {
+	content: "\e63c";
+}
+.picto_Previous:before {
+	content: "\e63d";
+}
+.picto_Refresh:before {
+	content: "\e63e";
+}
+.picto_Rglement:before {
+	content: "\e63f";
+}
+.picto_Retweet:before {
+	content: "\e640";
+}
+.picto_Search:before {
+	content: "\e641";
+}
+.picto_Settings:before {
+	content: "\e642";
+}
+.picto_Twitter:before {
+	content: "\e643";
+}
+.picto_Up:before {
+	content: "\e644";
+}
+.picto_VIP:before {
+	content: "\e645";
+}
+.picto_Youtube:before {
+	content: "\e646";
+}
+
+.rotate-right
+{
+	transform: rotate(90deg);
+}
+.rotate-left
+{
+	transform: rotate(-90deg);
+}
+
+[class^="picto_"].blue
+{
+	color: #3366CC;
+}
+
+[class^="picto_"].lg
+{
+	font-size: 20px;
+}

@@ -1,0 +1,281 @@
+/* COMMONS */
+.center
+{
+    text-align: center;
+}
+
+/* FLAGS */
+.lang
+{
+    width: 20px;
+    height: 13px;
+    background-image: url('../../img/icon/flags_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lang.fr
+{
+    background-position: 0 0;
+}
+
+.lang.us
+{
+    background-position: 0 -13px;
+}
+
+.lang.es
+{
+    background-position: 0 -26px;
+}
+
+.lang.ru
+{
+    background-position: 0 -39px;
+}
+
+/* Faction icons */
+
+.icon_faction
+{
+    width: 19px;
+    height: 25px;
+    background-image: url('../../img/icon/faction/icon_faction2.png');
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.icon_faction.horde
+{
+    background-image: url('../../img/icon/faction/horde2.png');
+}
+
+.icon_faction.alliance
+{
+    background-image: url('../../img/icon/faction/alliance2.png');
+}
+
+/* difficulty icons */
+
+.difficulty
+{
+    width: 19px;
+    height: 24px;
+    background-image: url('../../img/community/difficulty/normal.png');
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.difficulty.normal
+{
+    background-image: url('../../img/community/difficulty/normal.png');
+}
+
+.difficulty.heroic
+{
+    background-image: url('../../img/community/difficulty/heroic.png');
+}
+
+.difficulty.mythic
+{
+    background-image: url('../../img/community/difficulty/mythic.png');
+}
+
+
+/* PROGRESS BAR */
+progress.fs-progress
+{
+    width: 100%;
+    border: 0 none;
+    background: rgb(22, 32, 39);
+    height: 4px;
+    margin-top: 15px;
+}
+
+progress.fs-progress::-moz-progress-bar
+{
+    background: rgb(51,102,204);
+    background: -moz-linear-gradient(left,  rgba(51,102,204,1) 0%, rgba(63,127,255,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,102,204,1)), color-stop(100%,rgba(63,127,255,1)));
+    background: -webkit-linear-gradient(left,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    background: -o-linear-gradient(left,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    background: linear-gradient(to right,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3366cc', endColorstr='#3f7fff',GradientType=1 );
+}
+
+progress.fs-progress::-webkit-progress-bar
+{
+    background: transparent;
+}
+
+progress.fs-progress::-webkit-progress-value
+{
+    background: rgb(51,102,204);
+    background: -moz-linear-gradient(left,  rgba(51,102,204,1) 0%, rgba(63,127,255,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,102,204,1)), color-stop(100%,rgba(63,127,255,1)));
+    background: -webkit-linear-gradient(left,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    background: -o-linear-gradient(left,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    background: linear-gradient(to right,  rgba(51,102,204,1) 0%,rgba(63,127,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3366cc', endColorstr='#3f7fff',GradientType=1 );
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  progress.fs-progress
+  {
+    height: 4px;
+  }
+}
+
+/* ICON MORE AND LESS */
+span.icon.more,
+span.icon.less
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.6);
+    line-height: 27px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+*[aria-expanded="true"] span.icon.more
+{
+    display: none;
+}
+*[aria-expanded="true"] span.icon.less
+{
+    display: block;
+}
+*[aria-expanded="false"] span.icon.more
+{
+    display: block;
+}
+*[aria-expanded="false"] span.icon.less
+{
+    display: none;
+}
+
+/* COMMON TO  GREY AND WHITE-GREY SELECT */
+.bootstrap-select .btn
+{
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: #71818c;
+    font-family: 'UbuntuLight';
+}
+
+.bootstrap-select .btn:hover
+{
+    box-shadow: none;
+}
+
+.bootstrap-select .picto_Down
+{
+    display: inline-block;
+}
+.bootstrap-select .picto_Up
+{
+    display: none;
+}
+.bootstrap-select.open .picto_Down
+{
+    display: none;
+}
+.bootstrap-select.open .picto_Up
+{
+    display: inline-block;
+}
+
+.bootstrap-select .dropdown-menu
+{
+    background-color: transparent;
+    border-radius: 0;
+    border: 0px;
+    box-shadow: none;
+    margin-bottom: -3px;
+    overflow: hidden;
+}
+
+.bootstrap-select .dropdown-menu li a
+{
+    background-color: rgb(32, 43, 52);
+    color: #71818c;
+    font-family: 'UbuntuLight';
+    height: 40px;
+    display: block;
+    padding: 10px 0 0 12px;
+}
+
+.bootstrap-select .dropdown-menu li a:hover
+{
+    background-color: rgb(60, 74, 84);
+    color: white;
+}
+
+.bootstrap-select .dropdown-menu .selected
+{
+    display: none;
+}
+
+/* GREY SELECT */
+.bootstrap-select.grey .btn
+{
+    background-color: rgb(32, 43, 52);
+}
+.bootstrap-select.grey .btn:hover
+{
+    color: white;
+}
+.bootstrap-select.grey.open .dropdown-toggle.btn-default
+{
+    background-color: rgb(51, 102, 204);
+    box-shadow: none;
+    color: white;
+    border-radius: 3px 3px 0 0;
+}
+
+/* WHITE-GREY SELECT */
+.bootstrap-select.white-grey .btn
+{
+    border-right: 30px solid rgb(32, 43, 52);
+}
+.bootstrap-select.white-grey .btn:hover
+{
+    color: black;
+    background-color: white;
+}
+.bootstrap-select.white-grey .btn:hover .picto_Down,
+.bootstrap-select.white-grey .btn:hover .picto_Up
+{
+    color: white;
+}
+.bootstrap-select.white-grey .picto_Down,
+.bootstrap-select.white-grey .picto_Up
+{
+    margin-left: 30px;
+}
+.bootstrap-select.white-grey.open .dropdown-toggle.btn-default
+{
+    background-color: white;
+    box-shadow: none;
+    color: black;
+    border-radius: 3px 3px 0 0;
+}
+.bootstrap-select.white-grey .btn-default:focus
+{
+    background-color: white !important;
+}
+.bootstrap-select.white-grey.open [class^="picto_"]
+{
+    color: #71818c;
+}
+.bootstrap-select.white-grey .dropdown-menu
+{
+    margin-top: -1px;
+}
